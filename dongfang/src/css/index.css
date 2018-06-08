@@ -8,6 +8,13 @@
 .right {
   float: right; }
 
+.clear:after {
+  content: ",";
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden; }
+
 .header .top {
   width: 100%;
   height: 32px;
@@ -270,11 +277,25 @@
   height: 10px;
   background: url("../img/q.png"); }
 
+.content_right {
+  position: absolute;
+  left: 418px;
+  top: 0; }
+
+.content_right li {
+  float: left;
+  border: 1px solid #e8e6e6;
+  width: 220px;
+  height: 305px;
+  padding: 8px;
+  margin-left: 16px;
+  background: #fff; }
+
 .louceng_content {
   background: #f6f6f7; }
 
 .louceng_content .content_title {
-  padding: 20px 0 13px 10px;
+  margin: 20px 0 13px 10px;
   height: 44px; }
 
 .louceng_content .content_title h3 {
@@ -344,30 +365,21 @@
   border: 1px solid #ccc;
   padding: 15px; }
 
-.content_right {
-  width: 762px;
-  position: absolute;
-  left: 418px;
-  top: 0; }
-
-.content_right li {
-  float: left;
-  border: 1px solid #e8e6e6;
-  width: 220px;
-  height: 305px;
-  padding: 8px;
-  margin-left: 16px;
-  background: #fff; }
-
-.content_right li:nth-of-type(1), .content_right li:nth-of-type(2), .content_right li:nth-of-type(3) {
+.content_right li:nth-of-type(1) {
   margin-bottom: 20px; }
 
-.global_shopping .content_left .banner {
+.content_right li:nth-of-type(2) {
+  margin-bottom: 20px; }
+
+.content_right li:nth-of-type(3) {
+  margin-bottom: 20px; }
+
+.group_buying .content_left .banner, .global_shopping .content_left .banner {
   width: 400px;
   padding: 10px 10px 30px; }
 
-.global_shopping .content_left img {
-  width: 400px; }
+.group_buying .content_left .banner a img, .global_shopping .content_left .banner a img {
+  width: 100%; }
 
 .big_advertising {
   width: 100%;
@@ -384,20 +396,107 @@
   right: 0;
   border-right: 0; }
 
-.food_beverage .content_title {
-  position: relative; }
+.sorting .content_title {
+  position: relative;
+  border-bottom: 1px solid #000; }
 
-.food_beverage .content_title .more {
+.sorting .content_title .more {
   width: 80px;
   height: 24px;
   position: absolute;
   right: 0;
-  top: center;
+  top: 10px;
   background: #fff;
   border: 1px solid #dbdbdb; }
 
-.food_beverage .more a {
+.sorting .more a {
   font-size: 14px;
   display: block;
   margin: 5px 12px;
   color: #333; }
+
+.sorting .content_left {
+  width: 290px;
+  border: 0; }
+
+.sorting .content_left .banner {
+  width: 290px;
+  position: relative; }
+
+.sorting .content_left .banner img {
+  width: 290px; }
+
+.sorting .content_right {
+  position: absolute;
+  left: 290px;
+  top: 0; }
+
+.sorting .content_right li {
+  float: left;
+  border: 1px solid #e8e6e6;
+  width: 200px;
+  height: 274px;
+  padding: 8px;
+  margin-left: 6px;
+  background: #fff; }
+
+.sorting .content_right li:nth-of-type(1) {
+  margin-bottom: 6px; }
+
+.sorting .content_right li:nth-of-type(2) {
+  margin-bottom: 6px; }
+
+.sorting .content_right li:nth-of-type(3) {
+  margin-bottom: 6px; }
+
+.sorting .content_right li:nth-of-type(4) {
+  margin-bottom: 6px; }
+
+.content_left .content_left_b li {
+  float: left;
+  border: 1px solid #e8e8e8;
+  width: 94px;
+  height: 117px; }
+
+.content_left_b li:nth-of-type(1) {
+  border-bottom: 0; }
+
+.content_left_b li:nth-of-type(2) {
+  border-bottom: 0; }
+
+.content_left_b li:nth-of-type(3) {
+  border-bottom: 0; }
+
+.content_left li div {
+  width: 92px;
+  height: 50px;
+  padding-top: 32px;
+  position: relative;
+  text-align: center; }
+
+.content_left li div:hover {
+  top: -10px; }
+
+.content_left li p {
+  color: #333;
+  text-align: center;
+  font-size: 14px; }
+
+.kitchen_furniture .content_left_b {
+  padding: 10px; }
+
+.content_left_b .tuijian {
+  height: 82px;
+  padding-left: 41px;
+  margin-left: 15px;
+  background: url("../img/tuijianbg.png") no-repeat left top; }
+
+.content_left_b .tuijian div {
+  background: url("../img/xiaoicon.png") no-repeat left 13px;
+  padding-left: 13px;
+  height: 27px;
+  line-height: 27px; }
+
+.content_left_b .tuijian div a {
+  color: #333;
+  font-size: 14px; }

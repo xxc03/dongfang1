@@ -26,11 +26,25 @@ $btn-top:50%;
 	height:10px;
 	background:url("../img/q.png")
 }
+%right-commoditylist{
+	position:$po-absolute;
+	left:418px;
+	top:0;
+}
+%right-commoditylist li{
+	float:$left;
+	border:1px solid #e8e6e6;
+	width:220px;
+	height:305px;
+	padding:8px;
+	margin-left:16px;
+	background:#fff;
+}
 .louceng_content{
 	background:#f6f6f7;	
 }
 .louceng_content .content_title{
-	padding:20px 0 13px 10px;
+	margin:20px 0 13px 10px;
 	height:44px;
 }
 .louceng_content .content_title h3{
@@ -106,29 +120,26 @@ $btn-top:50%;
 	padding:15px;
 }
 .content_right{
-	width:762px;
-	position:$po-absolute;
-	left:418px;
-	top:0;
+	@extend %right-commoditylist;
 }
-.content_right li{
-	float:$left;
-	border:1px solid #e8e6e6;
-	width:220px;
-	height:305px;
-	padding:8px;
-	margin-left:16px;
-	background:#fff;
+@for $i from 1 through 3{//不包括10
+  .content_right li:nth-of-type(#{$i}){
+       margin-bottom:20px;
+   } 
 }
-.content_right li:nth-of-type(1),.content_right li:nth-of-type(2),.content_right li:nth-of-type(3){
-	margin-bottom:20px;
-}
-.global_shopping .content_left .banner{
+%left-commodity-banner{
 	width:400px;
 	padding:10px 10px 30px;
 }
-.global_shopping .content_left img{
-	width:400px;
+%left-commodity-banner a img{
+	width:100%;
+}
+
+.group_buying .content_left .banner{
+	@extend %left-commodity-banner;
+}
+.global_shopping .content_left .banner{
+	@extend %left-commodity-banner
 }
 .big_advertising {
 	width:100%;
@@ -147,21 +158,97 @@ $btn-top:50%;
 	right:0;
 	border-right:0;
 };
-.food_beverage .content_title{
+.sorting .content_title{
 	position:$po-relative;
+	border-bottom:1px solid #000;
 }
-.food_beverage .content_title .more{
+.sorting .content_title .more{
 	width:80px;
 	height:24px;
 	position:$po-absolute;
 	right:0;
-	top:center;
+	top:10px;
 	background:#fff;
 	border:1px solid #dbdbdb;
 } 
-.food_beverage .more a{
+.sorting .more a{
 	font-size:14px;
 	display:block;
 	margin:5px 12px;
 	color:#333;
+}
+.sorting .content_left{
+	width:$content-left-width - 128;
+	border:0;
+}
+.sorting .content_left .banner{
+	width:$content-left-width - 128;
+	position:$po-relative;
+}
+.sorting .content_left .banner img{
+	width:$content-left-width - 128;
+}
+.sorting .content_right{
+	position:$po-absolute;
+	left:290px;
+	top:0;
+}
+.sorting .content_right li{
+	float:$left;
+	border:1px solid #e8e6e6;
+	width:200px;
+	height:274px;
+	padding:8px;
+	margin-left:6px;
+	background:#fff;
+}
+@for $i from 1 through 4{//不包括10
+  .sorting .content_right li:nth-of-type(#{$i}){
+       margin-bottom:6px;
+   } 
+}
+.content_left .content_left_b li{
+	float:left;
+	border:1px solid #e8e8e8;
+	width:94px;
+	height:117px;
+}
+@for $i from 1 through 3{//不包括10
+  .content_left_b li:nth-of-type(#{$i}){
+       border-bottom:0;
+   } 
+}
+.content_left li div{
+	width:92px;
+	height:50px;
+	padding-top:32px;
+	position:relative;
+	text-align:center;
+}
+.content_left li div:hover{
+	top:-10px;
+}
+.content_left li p{
+	color:#333;
+	text-align:center;
+	font-size:14px;
+}
+.kitchen_furniture .content_left_b{
+	padding:10px;
+}
+.content_left_b .tuijian{
+	height:82px;
+	padding-left:41px;
+	margin-left:15px;
+	background:url("../img/tuijianbg.png") no-repeat left top;
+}
+.content_left_b .tuijian div{
+	background:url("../img/xiaoicon.png") no-repeat left 13px;
+	padding-left:13px;
+	height:27px;
+	line-height:27px;
+}
+.content_left_b .tuijian div a{
+	color:#333;
+	font-size:14px;
 }
