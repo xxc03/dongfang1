@@ -1,0 +1,167 @@
+$content-left-width:418px;
+$btn-top:50%;
+%left-right-btn{
+	width:25px;
+	height:45px;
+	position:$po-absolute;
+	overflow:hidden;
+	border:1px solid #ccc;
+	top:$btn-top;
+}
+%left-right-btn span{
+	margin-left:24px;
+	text-align:center;
+	height:45px;
+	line-height:45px;
+}
+%circle-btn{
+	position:$po-absolute;
+	left:40%;
+	bottom:10px;
+}
+%circle-btn li{
+	float:$left;
+	margin-left:5px;
+	width:10px;
+	height:10px;
+	background:url("../img/q.png")
+}
+.louceng_content{
+	background:#f6f6f7;	
+}
+.louceng_content .content_title{
+	padding:20px 0 13px 10px;
+	height:44px;
+}
+.louceng_content .content_title h3{
+	font-size:24px;
+	color:#424242;
+	float:$left;
+}
+.louceng_content .content_title>a{
+	display:inline-block;
+	margin-left:30px;
+	padding-top:7px;
+	color:#333;
+}
+.louceng_content .content{
+	position:relative;
+}
+.content_left{
+	width:$content-left-width;
+	border:1px solid #ccc;
+}
+.content_left .banner{
+	width:$content-left-width;
+	position:$po-relative;
+}
+.content_left .banner img{
+	width:$content-left-width;
+}
+.content_left .banner>div:hover{
+	width:73px;
+}
+.content_left .banner .left_btn{
+	@extend %left-right-btn;
+	background:url('../img/leftjiantou.png') no-repeat left center;
+	left:0;
+	border-left:0;
+}
+.content_left .banner .right_btn{
+	@extend %left-right-btn;
+	background:url('../img/rightjiantou.png') no-repeat right center;
+	right:0;
+	border-right:0;
+}
+.content_left .banner ul{
+	@extend %circle-btn;
+}
+.content_left .banner ul li:hover{
+	background:url("../img/qf.png");
+}
+.content_left .intro{
+	width:408px;
+	height:25px;
+	padding:23px 0 8px 10px;
+}
+.content_left .price{
+	width:408px;
+	height:22px;
+	padding:8px 0 0 10px;
+}
+.content_left .recommend{
+	width:388px;
+	height:112px;
+	padding:20px 15px 24px;
+	border-top:1px dotted #b2b2b2;
+}
+.content_left .recommend h3{
+	color:#2c2c2c;
+	margin-bottom:15px;
+}
+.content_left .recommend div{
+	width:356px;
+	height:60px;
+	border:1px solid #ccc;
+	padding:15px;
+}
+.content_right{
+	width:762px;
+	position:$po-absolute;
+	left:418px;
+	top:0;
+}
+.content_right li{
+	float:$left;
+	border:1px solid #e8e6e6;
+	width:220px;
+	height:305px;
+	padding:8px;
+	margin-left:16px;
+	background:#fff;
+}
+.content_right li:nth-of-type(1),.content_right li:nth-of-type(2),.content_right li:nth-of-type(3){
+	margin-bottom:20px;
+}
+.global_shopping .content_left .banner{
+	width:400px;
+	padding:10px 10px 30px;
+}
+.global_shopping .content_left img{
+	width:400px;
+}
+.big_advertising {
+	width:100%;
+	position:$po-relative;
+	margin-top:30px;
+}
+.big_advertising .left_btn{
+	@extend %left-right-btn;
+	background:url('../img/leftjiantou.png') no-repeat left center;
+	left:0;
+	border-left:0;
+}
+.big_advertising .right_btn{
+	@extend %left-right-btn;
+	background:url('../img/rightjiantou.png') no-repeat right center;
+	right:0;
+	border-right:0;
+};
+.food_beverage .content_title{
+	position:$po-relative;
+}
+.food_beverage .content_title .more{
+	width:80px;
+	height:24px;
+	position:$po-absolute;
+	right:0;
+	top:center;
+	background:#fff;
+	border:1px solid #dbdbdb;
+} 
+.food_beverage .more a{
+	font-size:14px;
+	display:block;
+	margin:5px 12px;
+	color:#333;
+}
