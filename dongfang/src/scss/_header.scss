@@ -22,6 +22,20 @@ $nav-height:34px;
 	height:0;
 	visibility:hidden;
 }
+a{
+	color:#333;
+	font-size:14px;
+}
+a:hover{
+	color:#239cdc;
+	text-decoration:underline;
+}
+.price{
+	display:inline-block;
+	margin-top:10px;
+	color:red;
+	color:15px;
+}
 .header .top{
 	width:100%;
 	height:$top-height;
@@ -35,8 +49,7 @@ $nav-height:34px;
 	margin:0 10px;	
 }
 .top-left span a{
-	color:#333;
-	
+	color:#333;	
 }
 .top-right>div{
 	margin:0 10px;	
@@ -59,8 +72,9 @@ $nav-height:34px;
 	height:70px;
 } 
 .header .search{
-	width:490px;
+	width:466px;
 	height:70px;
+	margin-right:24px;
 	padding:12px 0 0 22px;
 }
 .search .search_bar{
@@ -96,6 +110,10 @@ $nav-height:34px;
 .search .hotbot li a{
 	color:#000;
 	font-size: 14px
+}
+.search .hotbot>div{
+	float:$right;
+	margin-top:5px;
 }
 .shop-cart{
 	padding-left:17px;

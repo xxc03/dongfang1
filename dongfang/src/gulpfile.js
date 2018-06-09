@@ -40,13 +40,13 @@ gulp.task('watchsass',function(){
 });
 //4.压缩css文件
 gulp.task('uglifycss',function(){
-	gulp.src('css/index.css')
+	gulp.src('css/*.css')
 	.pipe(css())
 	.pipe(gulp.dest('../dist/css/'))
 });
 //监听压缩
 gulp.task('watchcss',function(){
-	gulp.watch('css/index.css',function(){
+	gulp.watch('css/*.css',function(){
 		gulp.run('uglifycss');
 	})
 });
