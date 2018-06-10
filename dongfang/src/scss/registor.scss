@@ -1,61 +1,109 @@
-*{
-	padding:0px;
-	margin:0px;
-}
-li{
-	list-style: none;
-}
-a{
-	text-decoration: none;
-}
-.wrapper{
-	width:1190px;
-	margin:0 auto;
-}
+@import "header";
+@import "foot";
 .header .logo{
-	float:left;
-	padding:0 40px 0 10px;
-}
+	margin-right:60px;
+} 
 .header .search{
-	width:580px;
-	height:82px;
-	float: left;
-	padding:12px 0 0 62px;
+	width:540px;
 }
 .search .search_bar{
-	width:534px;
-	height:34px;
-	border: 3px solid #f12e24;
-	position: relative;
+	width:540px;
 }
 .search .search_bar input{
-	width:457px;
-	height:34px;
-	border:0;
+	width:463px;
+}
+.search .hotbot ul{
+	float:left;
+	margin-right:30px;
+}
+.blue_box{
+	height:70px;
+	background:#239cdc;
+}
+.register_info{
+	width:860px;
+	background:#f6f6f7;
+}
+.phone_register{
+	width:545px;
+	height:55px;
+	border-bottom: 2px solid red;
+	padding-left:260px;
+	margin:0 auto;
+}
+.phone_register img{
+	margin:10px 10px 0 0;
+}
+.phone_register h3{
+	height:55px;
+	line-height:55px;
+	font-size:30px;
+	font-weight:300;
+}
+.register_info .phone_register span{
+	display:inline-block;
+	margin:0;
+	padding-top:30px;
+	font-size:16px;
+}
+.phone_register img{
+	vertical-align:-10px;
+}
+.register_info form{
+	margin:50px 0 0 200px;
+}
+.register_info form>p{
+	height:68px;
+	box-sizing: border-box;
+	position: relative;
+}
+
+.register_info p label input{
 	outline: none;
-	float: left;
-	text-indent: 10px
+	border:1px solid #ccc;
+	width:310px;
+	height:36px;
 }
-.search .search_bar button{
-	border:0;
-	width:77px;
-	height:34px;
-	line-height: 34px;
+.register_info span {
+    color: rgb(120, 120, 120);
+    margin-left: 80px;
+    font-size: 14px;
+}
+.register_info p i{
+	display:inline-block;
+	position:absolute;
+	left:397px;
+	font-style: normal;
+}
+.register_info .randnum{
+	display:inline-block;
+	width: 100px;
+	height: 38px;
+	line-height: 38px;
 	text-align: center;
-	background:#f12e24;
+	background: #deb887;
+	font-size: 24px;
+	color: #b22222;
 	cursor: pointer;
+}
+.register_info p .aclick{
+	display:inline-block;
+	float: right;
+	height: 38px;
+	line-height: 38px;
+	text-align: center;
+	text-decoration: none;
+}
+.register_info p .zhuce{
+	margin-left:100px;
+	width:178px;
+	height:44px;
+	border-radius: 10px;
+	background: red;
+	color: #fff;
 	font-size: 16px;
-	color:#fff;
-	float: left;
 }
-.search .hotbot li{
-	height:28px;
-	line-height: 28px;
-	float: left;
-	margin-right: 8px;
-	margin-left: 3px;
-}
-.search .hotbot li a{
-	color:#000;
-	font-size: 14px
+.register_info .tiaokuan a{
+	font-size:16px;
+	color:#3333ff;
 }

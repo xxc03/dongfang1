@@ -239,6 +239,18 @@ a:hover {
   margin-top: 30px;
   border-top: 3px solid #5c686e; }
 
+.banner ul {
+  position: absolute;
+  left: 40%;
+  bottom: -30px; }
+
+.banner ul li {
+  float: left;
+  margin-left: 5px;
+  width: 10px;
+  height: 10px;
+  background: url("../img/q.png"); }
+
 .header .logo {
   margin-right: 60px; }
 
@@ -255,92 +267,113 @@ a:hover {
   float: left;
   margin-right: 30px; }
 
-.blue_box {
-  height: 70px;
-  background: #239cdc; }
+.login .wrapper {
+  width: 870px;
+  padding: 50px 0 70px 0; }
 
-.register_info {
-  width: 860px;
-  background: #f6f6f7; }
-
-.phone_register {
-  width: 545px;
-  height: 55px;
-  border-bottom: 2px solid red;
-  padding-left: 260px;
-  margin: 0 auto; }
-
-.phone_register img {
-  margin: 10px 10px 0 0; }
-
-.phone_register h3 {
-  height: 55px;
-  line-height: 55px;
-  font-size: 30px;
-  font-weight: 300; }
-
-.register_info .phone_register span {
-  display: inline-block;
-  margin: 0;
-  padding-top: 30px;
-  font-size: 16px; }
-
-.phone_register img {
-  vertical-align: -10px; }
-
-.register_info form {
-  margin: 50px 0 0 200px; }
-
-.register_info form > p {
-  height: 68px;
-  box-sizing: border-box;
+.banner {
+  width: 450px;
   position: relative; }
 
-.register_info p label input {
-  outline: none;
-  border: 1px solid #ccc;
-  width: 310px;
-  height: 36px; }
+.banner img {
+  width: 450px; }
 
-.register_info span {
-  color: #787878;
-  margin-left: 80px;
+.banner > div:hover {
+  width: 73px; }
+
+.banner ul li:hover {
+  background: url("../img/qf.png"); }
+
+.login_box {
+  width: 350px;
+  margin-left: 60px;
+  border: 5px solid #f7f7f7; }
+
+.login_box .form {
+  border: 1px solid #e7e7e7;
+  height: 353px;
+  padding-left: 39px;
+  padding-top: 15px; }
+
+.login_box div {
+  width: 309px; }
+
+.login_box h4 {
+  width: 270px;
+  padding-bottom: 4px; }
+
+.same_style {
+  height: 20px;
+  line-height: 20px;
+  width: 203px;
+  padding: 6px 30px 7px 35px;
+  border: 1px solid #c9c8cf;
+  margin-bottom: 20px; }
+
+.login_box .form h4 {
   font-size: 14px; }
 
-.register_info p i {
+.login_box .form h4 a {
+  color: #505966;
+  font-size: 12px; }
+
+.login_box .form .username input {
+  background: url("../img/newlogin.inputbg1.jpg"); }
+
+.login_box .form .pass input {
+  background: url("../img/newlogin.inputbg2.jpg"); }
+
+.yzm {
+  position: relative; }
+
+.yzm input {
+  width: 78px;
+  padding-left: 10px;
+  padding-right: 20px; }
+
+.yzm i {
   display: inline-block;
   position: absolute;
   left: 397px;
   font-style: normal; }
 
-.register_info .randnum {
+.yzm div {
+  width: 198px; }
+
+.yzm .randnum {
   display: inline-block;
   width: 100px;
-  height: 38px;
-  line-height: 38px;
+  height: 42px;
+  line-height: 42px;
   text-align: center;
-  background: #deb887;
   font-size: 24px;
   color: #b22222;
   cursor: pointer; }
 
-.register_info p .aclick {
+.yzm .aclick {
   display: inline-block;
-  float: right;
-  height: 38px;
-  line-height: 38px;
+  width: 45px;
+  height: 36px;
   text-align: center;
-  text-decoration: none; }
+  margin-right: 39px; }
 
-.register_info p .zhuce {
-  margin-left: 100px;
-  width: 178px;
-  height: 44px;
-  border-radius: 10px;
-  background: red;
-  color: #fff;
-  font-size: 16px; }
+.login_btn {
+  margin-bottom: 15px; }
 
-.register_info .tiaokuan a {
-  font-size: 16px;
-  color: #3333ff; }
+.jizhu {
+  font-size: 14px; }
+
+.jizhu a {
+  display: inline-block;
+  margin-right: 39px;
+  color: #0080c6; }
+
+.form .other {
+  margin-top: 10px; }
+
+.form .other span {
+  font-size: 12px;
+  color: #a4a4a4; }
+
+.form .other div {
+  width: 116px; }

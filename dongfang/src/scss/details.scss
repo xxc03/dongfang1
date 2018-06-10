@@ -12,6 +12,7 @@
 	float:$left;
 	height:40px;
 	line-height:40px;
+	font-size:12px;
 }
 .nav_input .jiantou{
 	text-align:center;
@@ -53,6 +54,9 @@
     line-height: 16px;
     font-size:10px;
 }
+.particulars{
+	margin-bottom:50px;
+}
 .particulars h2{
 	padding: 15px 0px 10px 0px;
     line-height: 14px;
@@ -69,30 +73,27 @@
 	background:url("../img/bg.prev.icon.1.gif");
 	margin-right:5px;
 }
-.particulars_info{
+ .particulars_info{
 	margin-top:20px;
 }
-/* .wrap {
-    width: 1000px;
-    height: 500px;
-    margin: 0 auto;
+ .particulars_info_left {
+ 	width:340px;
     position: relative;
 }
 
-#spic {
-    width: 400px;
-    height: 400px;
-    border: 1px solid #000;
-    float: left;
+.spic {
+    width: 338px;
+    height: 338px;
+    border: 1px solid #ccc;
     position: relative;
 }
 
-#spic img {
-    width: 400px;
-    height: 400px;
+.spic img {
+    width: 338px;
+    height: 338px;
 }
 
-#sf {
+.sf {
     background: orange;
     opacity: 0.3;
     position: absolute;
@@ -101,67 +102,202 @@
     visibility: hidden;
 }
 
-#bf {
-    width: 400px;
-    height: 500px;
-    border: 1px solid #000;
-    float: left;
+.bf {
+    width: 550px;
+    height: 550px;
+    border: 1px solid #ccc;
     overflow: hidden;
-    position: relative;
-    left: 10px;
-    visibility: hidden;
+    position:$po-absolute;
+    left: 348px;
+    top:0;
+    display:none;
 }
 
-#bf img {
+.bf img {
     position: absolute;
     left: 0px;
     top: 0px;
 }
 
-#ulist {
-    position: absolute;
-    left: 0px;
-    bottom: 15px;
-    width: 402px;
-    height: 56px;
-     overflow: hidden; 
+.piclist {
+	width:340px;
+	height:50px;
+   margin-top:10px;
+   text-align:center;
+}
+.piclist ul li {
+    display:inline-block;
+    padding:0 3px;
 }
 
-#ulist a {
-    float: left;
-    width: 10px;
-    height: 54px;
+.piclist ul li img {
+    width: 50px;
+    height: 50px;
     border: 1px solid #ccc;
-    text-decoration: none;
-    line-height: 56px;
-    text-align: center;
-    background: #fff;
+} 
+.line{
+	margin-top:14px;
+	width:340px;
+	height:32px;
+	border-top:1px solid #000;
+	position:$po-relative;
 }
-
-#list {
-    float: left;
-    margin-left: 18px;
-    width: 372px;
-    position: relative;
+.view_image{
+	width:93px;
+	height:32px;
+	line-height:32px;
+	text-align:center;
+	position:$po-absolute;
+	left:5px;
+	top:-1px;
+	border-left:1px solid #000;
+	border-right:1px solid #000;
+	border-bottom:3px solid #ea0505 ;
+	background:#fff;
+	font-weight:900;
+	font-size:14px;
 }
+.particulars_info_right{
+	width:512px;
+	margin-left:10px;
+	position:$po-relative;
+	color:#7d8289
 
-ul {
-    list-style: none;
-    float: left;
-    position: absolute;
-    left: 0px;
-    top: 0px;
 }
-
-ul li {
-    float: left;
-    width: 56px;
-    height: 56px;
-    padding-right: 6px;
+.particulars_info_right dl{
+	margin-bottom:10px;
+	
 }
-
-ul li img {
-    width: 52px;
-    height: 52px;
-    border: 1px solid #ccc;
-} */
+.serial_number{
+	border-bottom:1px solid #e7e9ee;  
+	padding-bottom:10px; 
+}
+.particulars_info_right dt{
+	width:70px;
+	line-height:16px;
+	font-size:13px;
+}
+.particulars_info_right dd{
+	width:442px;
+	font-size:14px;
+}
+.serial_number dd a{
+	display:inline-block;
+	color:#fff;
+	background:#229cdb url("../img/cal_icon.jpg")no-repeat 2px center;
+	padding:3px 3px 3px 16px;
+}
+.commodity_prices dt{
+	line-height:26px;
+}
+.commodity_prices .price{
+	font-size:24px;
+	font-weight:900;
+	color:#f10000;
+	margin:0;
+}
+.jifen dd em{
+	display:inline-block;
+	width:12px;
+	height:12px;
+	background:url("../img/bg.icon.2.gif") no-repeat 0 0;
+	font-style:normal;
+}
+.xiangxi dd span{
+	color:#229cdb;
+}
+.xiangxi dd a{
+	display:inline-block;
+	background:url("../img/bg.more.1.gif") no-repeat 0 0;
+	width:36px;
+	height:11px;
+}
+.xiangxi dd a:hover{
+	background:url("../img/bg.more.1.gif") no-repeat 0 -11px;
+}
+.complimentary{
+	padding-bottom:10px;
+	border-bottom:1px solid #e7e9ee;  	
+}
+.peisong dd dl{
+	height:18px;
+	width:120px;
+	background: #fff;
+    border:1px solid #d2d2d2;
+}
+.peisong dd dl dt{
+	font-size:13px;
+    padding-right:50px;
+    color: #737f86;
+    cursor: pointer;
+    background:url("../img/bg.imitateselect1.dt.gif") no-repeat right center;
+}
+.number{
+	padding-bottom:10px;
+	border-bottom:1px solid #e7e9ee;  	
+}
+.number dd p{
+	width:70px;
+	height:25px;
+	background:url("../img/space.gif")
+}
+.number p span,.number em{
+	display:inline-block;
+	width:21px;
+	height:25px;
+	cursor:pointer;
+	float:left;
+}
+.number dd p b{
+	float:left;
+	display:inline-block;
+	width:28px;
+	height:25px;
+	line-height:25px;
+	text-align:center;
+	font-weight:300;
+}
+.buy_btn{
+	width: 100%;
+    padding:15px 0;
+    border-top: #bac1c5 1px solid;
+    border-bottom: #bac1c5 1px solid;
+    height: 84px;
+}
+.buy_btn .buy{
+    display: inline-block;
+    width: 80px;
+    height: 42px;
+    line-height: 42px;
+    padding-left: 42px;
+    margin-top: 10px;
+    font-size: 16px;
+    color: #fff;
+    background: url("../img/bg.button.3.gif");
+    cursor: pointer;
+}
+.buy_btn .add_cart{
+    display: inline-block;
+    width: 122px;
+    height: 42px;
+    line-height: 42px;
+	text-align:center;
+    margin-top: 10px;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+	background:url("../img/bg.button.4.gif")
+}
+.buy_btn .erweima{
+	display: inline-block;
+	width:228px;
+	border-left:1px dotted #ccc;
+}
+.buy_btn .erweima a{
+	display: inline-block;
+	margin-top:40px;
+    width: 130px;
+    height: 32px;
+    font-size:10px;
+    text-align:center;
+}

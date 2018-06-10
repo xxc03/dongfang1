@@ -1,0 +1,144 @@
+@import "header";
+@import "foot";
+%circle-btn{
+	position:$po-absolute;
+	left:40%;
+	bottom:-30px;
+}
+%circle-btn li{
+	float:$left;
+	margin-left:5px;
+	width:10px;
+	height:10px;
+	background:url("../img/q.png")
+}
+.header .logo{
+	margin-right:60px;
+} 
+.header .search{
+	width:540px;
+}
+.search .search_bar{
+	width:540px;
+}
+.search .search_bar input{
+	width:463px;
+}
+.search .hotbot ul{
+	float:left;
+	margin-right:30px;
+}
+.login .wrapper{
+	width: 870px;
+    padding: 50px 0 70px 0;
+}
+ .banner{
+	width:450px;
+	position:$po-relative;
+}
+ .banner img{
+	width:450px;
+}
+.banner ul{
+	@extend %circle-btn;
+}
+ .banner>div:hover{
+	width:73px;
+}
+.banner ul li:hover{
+	background:url("../img/qf.png");
+}
+.login_box{
+	width: 350px;
+    margin-left: 60px;
+    border:5px solid #f7f7f7;
+}
+.login_box .form{
+	border: 1px solid #e7e7e7;
+    height: 353px;
+    padding-left: 39px;
+    padding-top: 15px;
+}
+.login_box div{
+	width:309px;
+}
+.login_box h4{
+	    width: 270px;
+    padding-bottom: 4px;
+} 
+.same_style{
+	height: 20px;
+    line-height: 20px;
+    width: 203px;
+    padding: 6px 30px 7px 35px;
+    border: 1px solid #c9c8cf;
+    margin-bottom:20px;
+}
+.login_box .form h4{
+	font-size:14px;
+}
+.login_box .form h4 a{
+	color:#505966;
+	font-size:12px;
+}
+.login_box .form .username input{
+	background:url("../img/newlogin.inputbg1.jpg")
+}
+.login_box .form .pass input{
+	background:url("../img/newlogin.inputbg2.jpg")
+}
+.yzm{
+	position:$po-relative;
+}
+.yzm input{
+	width: 78px;
+    padding-left: 10px;
+    padding-right: 20px;
+}
+.yzm i{
+	display:inline-block;
+	position:$po-absolute;
+	left:397px;
+	font-style: normal;
+}
+.yzm div{
+	width:198px;
+}
+.yzm .randnum{
+	display:inline-block;
+	width: 100px;
+	height: 42px;
+	line-height: 42px;
+	text-align: center;
+	font-size: 24px;
+	color: #b22222;
+	cursor: pointer;
+}
+.yzm .aclick{
+	display:inline-block;
+	width:45px;
+	height: 36px;
+	text-align: center;
+	margin-right:39px;
+}
+.login_btn{
+	margin-bottom:15px;
+}
+.jizhu{
+	font-size:14px;
+}
+.jizhu a{
+	display:inline-block;
+	margin-right:39px;
+	color:#0080c6;
+}
+.form .other{
+margin-top:10px;
+}
+.form .other span{
+	font-size:12px;
+	color:#a4a4a4;
+}
+.form .other div{
+	width:116px;
+}
