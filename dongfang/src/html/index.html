@@ -7,6 +7,7 @@
 	<meta name="description" content="全国免费配送，全国免费退换，促销，团购，部分商品当天配送，周末暴杀，今日特卖 。" />
 <link rel="stylesheet" type="text/css" href="../css/reset.css">
 <link rel="stylesheet" type="text/css" href="../css/index.css">
+<script type="text/javascript" async="true" src='../script/lib/require.js' data-main='../script/js/main.js'></script>
 </head>
 <body>
 	<!-- 头部 -->
@@ -14,41 +15,55 @@
 		<div class='top'>
 			<div class="wrapper">
 				<div class="top-left">
-					<span calss="top-welcome">欢迎光临 OCJ.COM.CN</span>
-					<span><a href="login.html">登录</a></span>
-					<span><a href="registor.html">注册</a></span>
-					<span>送货至:</span>
+					<div class="login left" >
+				        <span calss="top-welcome">欢迎光临 OCJ.COM.CN</span>
+				        <span><a href="login.html">登录</a></span>
+				        <span><a href="registor.html">注册</a></span>
+				        <span>送货至:</span>
+				    </div>
+				    <div class="admin"  style="display: none;">
+				        <span class="nicheng"></span>
+				        <span><a href="javascript:;">退出</a></span>
+				        <span>送货至:</span>
+				    </div>				
 				</div>
 				<div class="top-right right">
-					<div>
-						<span>图</span>
-						<a href="#">我的购物</a>
-						<span>图</span>
+					<div class="my_shop">
+						<div>	
+							<span class="hiconfont"></span>
+							<a href="#">我的购物</a>
+							<span class="icon-arr icon-arrow-down8"></span>
+						</div>
 						<ul>
-							<li></li>
-							<li></li>
-							<li></li>
-							<li></li>
-							<li></li>
+							<li><a href="#"></a></li>
+							<li><a href="#">订单查询</a></li>
+							<li><a href="#">积分查询</a></li>
+							<li><a href="#">抵用券查询</a></li>
+							<li><a href="#">我的收藏</a></li>
+							<li><a href="#">修改信息</a></li>
 						</ul>
 					</div>
 					<div>
-						<span>图</span>
+						<span class="hiconfont"></span>
 						<a href="#">顾客中心</a>				
 					</div>
 					<div>
-						<span>图</span>
+						<span class="hiconfont"></span>
 						<a href="#">移动版</a>					
 					</div>
 					<div>
-						<span>图</span>
+						<span class="hiconfont"></span>
 						<a href="#">TV版</a>						
 					</div>
-					<div>
-						<span>图</span>
-						<a href="#">微信</a>	
+					<div class="weixin">
 						<div>
-											
+							<span><img src="http://www.ocj.com.cn/common/webpc/image/common/topimg5.png" alt=""></span>
+							<a href="#">微信</a>	
+						</div>
+						<span class="bg_box"></span>
+						<div class="weixin_erweima">
+							<p>扫一扫二维码,关注我们</p>
+							<img src="https://cdnimg.ocj.com.cn/image_site/shop/conts/8021/6741/9905/11128/1_20170904091940_98.jpg" alt="微信二维码">			
 						</div>				
 					</div>
 				</div>
@@ -57,9 +72,9 @@
 		<div class="buttom">		
 			<div class="wrapper">
 				<h1 class="logo left">
-					<a href="index.html"><img src="../img/cplogo0.png" alt="东方购物"></a>
+					<a href="index.html"><img src="https://cdnimg.ocj.com.cn/common/webpc/image/tiplogo/cplogo0.png" alt="东方购物"></a>
 				</h1>	
-				<a href="#" class="left"><img src="../img/1_20180511180615_9.jpg" ></a>
+				<a href="#" class="left"><img src="https://www.ocj.com.cn/image_site/shop/conts/8021/6741/9903/11464/1_20180511180615_9.jpg" ></a>
 				<div class="search left">
 					<div class="search_bar">
 						<form action="" method="get">
@@ -90,10 +105,14 @@
 					</div>
 				</div>
 				<div class="shop-cart left">
-					
+					<a href="cart.html">
+						<span class="cart_num"></span>
+						<img src="../img/cart.png" alt="">
+						购物车
+					</a>
 				</div>
 				<div class='left'>
-					<a href="#"><img src="../img/1_20180531172831_68.jpg" alt=""></a>	
+					<a href="#"><img src="https://cdnimg.ocj.com.cn/image_site/shop/conts/8021/6741/9941/11267/1_20180518104258_51.jpg" alt=""></a>	
 				</div>
 			</div>
 		</div>
@@ -118,35 +137,229 @@
 	<div class="main">
 		<div class="wrapper">
 			<div class="main_top" >
-				<div class="goods_category-nav left">
-					<div></div>
-					<div></div>
-					<div></div>
-					<div></div>
-					<div></div>
-					<div></div>
-					<div></div>
-					<div></div>
-					<div></div>
-					<div></div>
-					<div></div>
-					<div></div>
-					<div></div>
-					<div></div>
-					<div></div>
+				<div class="goods_category_nav left">
+					<ul>
+						<li>
+							<a href="#"><div class="bg_div"></div><span class="hiconfont">  </span>厨房用具、厨房电器</a>
+							<div class="subnav">
+								<div class="nav_wenzi left">
+									<div>
+										<h3>厨房电器</h3>
+										<div>
+											<p>
+												<a href="#">电水壶 /电水瓶</a>
+												<a href="#">电磁炉</a>
+												<a href="#">电饭煲</a>
+												<a href="#">榨汁/搅拌</a>												
+											</p>
+											<p>
+												<a href="#">豆浆机</a>
+												<a href="#">电压力煲</a>
+												<a href="#">酸奶机</a>
+												<a href="#">面包机/多士炉</a>
+											</p>
+											<p>
+												<a href="#">微波炉/烤箱</a>
+												<a href="#">抽油烟机/灶具</a>
+												<a href="#">煮蛋器</a>
+												<a href="#">面包机/多士炉</a>
+											</p>
+											<p>
+												<a href="#">碗筷消毒</a>
+												<a href="#">咖啡机</a>
+												<a href="#">DIY小家电</a>
+												<a href="#">电炖/电蒸锅</a>
+											</p>
+										</div>
+									</div>
+									<div>
+										<h3>厨房用品</h3>
+										<div>
+											<p>
+												<a href="#">豆浆机</a>
+												<a href="#">电压力煲</a>
+												<a href="#">酸奶机</a>
+												<a href="#">面包机/多士炉</a>	
+											</p>
+											<p>
+												<a href="#">电水壶 /电水瓶</a>
+												<a href="#">电磁炉</a>
+												<a href="#">电饭煲</a>
+												<a href="#">榨汁/搅拌</a>	
+											</p>
+											<p>
+												<a href="#">微波炉/烤箱</a>
+												<a href="#">抽油烟机/灶具</a>
+												<a href="#">煮蛋器</a>
+												<a href="#">面包机/多士炉</a>
+											</p>
+											<p>
+												<a href="#">电水壶 /电水瓶</a>
+												<a href="#">电磁炉</a>
+												<a href="#">电饭煲</a>
+												<a href="#">榨汁/搅拌</a>									
+												
+											</p>
+											
+										</div>
+									</div>
+									<div>
+										<h3>餐具容器</h3>
+										<div>
+											<p>
+												<a href="#">酸奶机</a>
+												<a href="#">面包机/多士炉</a>
+												<a href="#">电饭煲</a>
+												<a href="#">榨汁/搅拌</a>
+											</p>
+											<p>
+												<a href="#">豆浆机</a>
+												<a href="#">电压力煲</a>
+												<a href="#">酸奶机</a>
+												<a href="#">面包机/多士炉</a>
+											</p>
+											<p>
+												<a href="#">面包机/多士炉</a>
+												<a href="#">电磁炉</a>
+												<a href="#">电饭煲</a>
+												<a href="#">榨汁/搅拌</a>
+											</p>
+									
+										</div>
+									</div>
+								</div>
+								<div class="nav_pic left">
+									<div><a href="#"><img src="https://cdnimg.ocj.com.cn/image_site/shop/conts/8021/6741/9914/11598/1_20170407173801_13.jpg" alt=""></a></div>
+									<div><a href="#"><img src="https://cdnimg.ocj.com.cn/image_site/shop/conts/8021/6741/9914/11598/2_20160318141950_83.jpg" alt=""></a></div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<a href="#"><div class="bg_div"></div><span class="hiconfont">  </span>家具、家饰</a>
+							<div class="subnav">
+								<div class="nav_wenzi left">
+									<div>
+										<h3>被子</h3>
+										<div>
+											<p>
+												<a href="#">被子</a>
+												<a href="#">枕头</a>
+												<a href="#">床品套件</a>
+												<a href="#">床垫/床褥毛</a>																	
+											</p>
+											<p>
+												<a href="#">微波炉/烤箱</a>
+												<a href="#">抽油烟机/灶具</a>
+												<a href="#">煮蛋器</a>
+												<a href="#">面包机/多士炉</a>
+												
+											</p>
+											<p>
+												<a href="#">巾被/毯凉席凉枕</a>
+												<a href="#">电压力煲</a>
+												<a href="#">酸奶机</a>
+												<a href="#">面包机/多士炉</a>
+											</p>
+											<p>
+												<a href="#">碗筷消毒</a>
+												<a href="#">咖啡机</a>
+												<a href="#">DIY小家电</a>
+												<a href="#">电炖/电蒸锅</a>
+											</p>
+										</div>
+									</div>
+									<div>
+										<h3>厨房用品</h3>
+										<div>
+											<p>
+												<a href="#">电水壶 /电水瓶</a>
+												<a href="#">电磁炉</a>
+												<a href="#">电饭煲</a>
+												<a href="#">榨汁/搅拌</a>	
+												
+											</p>
+											<p>
+												<a href="#">豆浆机</a>
+												<a href="#">电压力煲</a>
+												<a href="#">酸奶机</a>
+												<a href="#">面包机/多士炉</a>	
+											</p>
+											<p>
+												<a href="#">电水壶 /电水瓶</a>
+												<a href="#">电磁炉</a>
+												<a href="#">电饭煲</a>
+												<a href="#">榨汁/搅拌</a>													
+											<p>
+												<a href="#">微波炉/烤箱</a>
+												<a href="#">抽油烟机/灶具</a>
+												<a href="#">煮蛋器</a>
+												<a href="#">面包机/多士炉</a>
+											</p>																				
+										</div>
+									</div>
+									<div>
+										<h3>餐具容器</h3>
+										<div>			
+											<p>
+												<a href="#">面包机/多士炉</a>
+												<a href="#">电磁炉</a>
+												<a href="#">电饭煲</a>
+												<a href="#">榨汁/搅拌</a>
+											</p>
+											<p>
+												<a href="#">豆浆机</a>
+												<a href="#">电压力煲</a>
+												<a href="#">酸奶机</a>
+												<a href="#">面包机/多士炉</a>
+											</p>
+											<p>
+												<a href="#">酸奶机</a>
+												<a href="#">面包机/多士炉</a>
+												<a href="#">电饭煲</a>
+												<a href="#">榨汁/搅拌</a>
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="nav_pic left">
+									<div><a href="#"><img src="https://cdnimg.ocj.com.cn/image_site/shop/conts/8021/6741/9914/11598/4_20180112111512_89.jpg" alt=""></a></div>
+									<div><a href="#"><img src="https://cdnimg.ocj.com.cn/image_site/shop/conts/8021/6741/9914/11598/6_20160408173228_2.jpg" alt=""></a></div>
+								</div>
+							</div>
+						</li>
+						<li><a href="#"><div class="bg_div"></div><span class="hiconfont"> </span>食品饮料</a></li>
+						<li><a href="#"><div class="bg_div"></div><span class="hiconfont"> </span>手机、数码、电脑</a></li>
+						<li><a href="#"><div class="bg_div"></div><span class="hiconfont">  </span>家用电器</a></li>
+						<li><a href="#"><div class="bg_div"></div><span class="hiconfont"> </span>化妆品、洗护淋浴</a></li>
+						<li><a href="#"><div class="bg_div"></div><span class="hiconfont"> </span>服装、鞋靴、箱包、配饰</a></li>
+						<li><a href="#"><div class="bg_div"></div><span class="hiconfont"> </span>母婴、玩具、宠物</a></li>
+						<li><a href="#"><div class="bg_div"></div><span class="hiconfont"> </span>珠宝、收藏、钟表</a></li>
+						<li><a href="#"><div class="bg_div"></div><span class="hiconfont"> </span>保健品、户外运动、器械</a></li>
+						<li><a href="#"><div class="bg_div"></div><span class="hiconfont"> </span>汽车、旅游、保险、服务</a></li>
+						<li class="black_bg"><a href="#"><img src="https://cdnimg.ocj.com.cn/common/webpc/image/imageindex/logo3.png" alt=""></a></li>
+						<li class="black_bg"><a href="#"><img src="https://cdnimg.ocj.com.cn/common/webpc/image/imageindex/logo2.png" alt=""></a></li>
+						<li class="black_bg"><a href="#"><img src="https://cdnimg.ocj.com.cn/common/webpc/image/imageindex/quanqiugoulogo.png" alt=""></a></li>
+						<li class="black_bg"><a href="#"><img src="https://cdnimg.ocj.com.cn/common/webpc/image/imageindex/logo5.png" alt=""></a></li>
+					</ul>
+					
 				</div>
 				<div class="main_top_right left">
-					<div class="product_display">
+					<div class="product_display ">
 						<div class="product_display_left left">
 							<div class="advertising_board left " >
 								<span>热销直播</span>
-								<img src="../img/xiabianjiao.png" alt="">
+								<img src="http://cdnimg.ocj.com.cn/common/webpc/image/imageindex/xiabianjiao.png" alt="">
 							</div>
 							<div class="advertising_concent left">
-								<a href="#" class="left"><img src="" alt=""></a>
+								
+								<a href="#" class="donghua left">
+									<i><img src="https://cdnimg.ocj.com.cn/common/theme/v1/images/common/bg.header.play.btn.png" alt=""></i>
+									<img src="https://cdnimg.ocj.com.cn/item_images/item/15/22/7551/15227551-L.jpg" class="pic">
+								</a>
+								
 								<div>
 									<div>
-										<img src="../img/tvlogo.png" alt="">
+										<img src="http://cdnimg.ocj.com.cn/common/webpc/image/imageindex/tvlogo.png" alt="">
 									</div>
 									<p><a href="#">泰泓 海水黑珍珠项链</a></p>
 									<div>
@@ -159,149 +372,135 @@
 							</div>
 						</div>
 						<div class="product_display_center left">
-							<img src="../img/1_20180606142232_70.jpg" alt="优惠产品">
+							<img src="http://cdnimg.ocj.com.cn/image_site/shop/conts/8021/6741/9906/11130/1_20180606142445_89.jpg" alt="优惠产品">
 						</div>
-						<div class="product_display_right">
-							<a href="#" class="left"><img src="../img/1_20161124142439_36.png" alt=""></a>
-						</div>
-						
+						<div class="product_display_right left">
+							<a href="#"><img src="http://cdnimg.ocj.com.cn/image_site/shop/conts/8021/6741/9906/11131/1_20161124142439_36.png" alt=""></a>
+						</div>		
 					</div>
-					<div class="banner left">
-						<div class="banner_left">
-							<img src="" alt="">
-						</div>
-						<div class="banner_right">
-							<div class="banner_right_t">
-								<a href="#"><img src="" alt=""></a>
-								<div>
-									<div></div>
-									<h4>标题</h4>
-									<p>简介</p>
-								</div>
-							</div>
-							<div class="banner_right_b">
-								<a href="#"><img src="" alt=""></a>
-								<div>
-									<div></div>
-									<h4>标题</h4>
-									<p>简介</p>
-								</div>
-							</div>
-						</div>
-
-					</div>	
 				</div>
+
 			</div>	
 		</div>
+	</div>
+	<div class="main_top_banner">
+		<div class="big_banner">
+			<ul></ul>
+		</div>
+		<div class="btn right_btn">
+			<span>1</span>/12
+		</div>
+		<div class="btn left_btn">
+			<span>1</span>/12
+		</div>
+		<ul class="circle_btn">
+			<li class="active"></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
 	</div>
 <!-- 楼层内容 -->
 	<div class="louceng_content">
 		<div class="wrapper">
-			<div class="anchor_recommend">
+			<div class="anchor_recommend clear">
 				<div class="content_title">
 					<h3>主播推荐</h3>
 					<a href="#">TV购物 热卖排行</a>
 				</div>
-				<div class="content">
-					<div class="content_left">
-						<div>
-							<div class="banner">
-								<a href="#"><img src="../img/15225054L.jpg" alt=""></a>
-								<div class="right_btn">
-									<span>1</span>/5
-								</div>
-								<div class="left_btn">
-									<span>1</span>/5
-								</div>
-								<ul>
-									<li class="active"></li>
-									<li></li>
-									<li></li>
-									<li></li>
-									<li></li>
-								</ul>
-							</div>
-							<p class="intro">一段文字简介</p>
-							<p class="price">价格</p>
-							<div class="recommend">
-								<h3>某某人推荐 :</h3>
-								<div>
-									推荐理由
-								</div>
-							</div>
+				<div class="content clear">
+					<div class="content_left clear">
+						<ul class="recommend_banner clear">
+						</ul>
+						<div class="btn right_btn">
+							<span>1</span>/5
 						</div>
-						<div></div>
-						<div></div>
-						<div></div>
-						<div></div>
+						<div class="btn left_btn">
+							<span>1</span>/5
+						</div>
+						<ul class="circle_btn">
+							<li class="active"></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
 					</div>
 					<ul class="content_right left">
-						<li>
-							<div class="commodity_pic">
+						<li class="chuangsid" picid="">
+							<div class="commodity_img">
+								<a href="javascript:;"><img src="" alt=""></a>
+							</div>
+							<div class="commodity_intro">
+								<a href="#"></a>
+							</div>
+							<div class="commodity_price">
+								<span style="color:red">￥</span><span class="price"></span>
+							</div>
+						</li>
+						<li class="chuangsid" picid="">
+							<div class="commodity_img" >
 								<a href="#"><img src="" alt=""></a>
 							</div>
 							<div class="commodity_intro">
-								<a href="#">世豹(CL) CL65铝合金断桥窗系统（3㎡订金货号）[升级款]</a>
+								<a href="#"></a>
 							</div>
 							<div class="commodity_price">
-								<span class="price">￥2997</span>
+								<span style="color:red">￥</span><span class="price"></span>
 							</div>
 						</li>
 						<li>
-						<div class="commodity_pic">
-							<a href="#"><img src="" alt=""></a>
-						</div>
-						<div class="commodity_intro">
-							<a href="#">世豹(CL) CL65铝合金断桥窗系统（3㎡订金货号）[升级款]</a>
-						</div>
-						<div class="commodity_price">
-							<span class="price">￥2997</span>
-						</div>
-					</li>
-					<li>
-						<div class="commodity_pic">
-							<a href="#"><img src="" alt=""></a>
-						</div>
-						<div class="commodity_intro">
-							<a href="#">世豹(CL) CL65铝合金断桥窗系统（3㎡订金货号）[升级款]</a>
-						</div>
-						<div class="commodity_price">
-							<span class="price">￥2997</span>
-						</div>
-					</li>
-					<li>
-						<div class="commodity_pic">
-							<a href="#"><img src="" alt=""></a>
-						</div>
-						<div class="commodity_intro">
-							<a href="#">世豹(CL) CL65铝合金断桥窗系统（3㎡订金货号）[升级款]</a>
-						</div>
-						<div class="commodity_price">
-							<span class="price">￥2997</span>
-						</div>
-					</li>
-					<li>
-						<div class="commodity_pic">
-							<a href="#"><img src="" alt=""></a>
-						</div>
-						<div class="commodity_intro">
-							<a href="#">世豹(CL) CL65铝合金断桥窗系统（3㎡订金货号）[升级款]</a>
-						</div>
-						<div class="commodity_price">
-							<span class="price">￥2997</span>
-						</div>
-					</li>
-					<li>
-						<div class="commodity_pic">
-							<a href="#"><img src="" alt=""></a>
-						</div>
-						<div class="commodity_intro">
-							<a href="#">世豹(CL) CL65铝合金断桥窗系统（3㎡订金货号）[升级款]</a>
-						</div>
-						<div class="commodity_price">
-							<span class="price">￥2997</span>
-						</div>
-					</li>
+							<div class="commodity_img" picid="">
+								<a href="#"><img src="" alt=""></a>
+							</div>
+							<div class="commodity_intro">
+								<a href="#"></a>
+							</div>
+							<div class="commodity_price">
+								<span class="price"></span>
+							</div>
+						</li>
+						<li>
+							<div class="commodity_img" picid="">
+								<a href="#"><img src="" alt=""></a>
+							</div>
+							<div class="commodity_intro">
+								<a href="#"></a>
+							</div>
+							<div class="commodity_price">
+								<span class="price"></span>
+							</div>
+						</li>
+						<li>
+							<div class="commodity_img">
+								<a href="#"><img src="" alt=""></a>
+							</div>
+							<div class="commodity_intro">
+								<a href="#"></a>
+							</div>
+							<div class="commodity_price">
+								<span class="price"></span>
+							</div>
+						</li>
+						<li>
+							<div class="commodity_img">
+								<a href="#"><img src="" alt=""></a>
+							</div>
+							<div class="commodity_intro">
+								<a href="#"></a>
+							</div>
+							<div class="commodity_price">
+								<span class="price"></span>
+							</div>
+						</li>
 					</ul>
 				</div>
 			</div>			
@@ -310,62 +509,83 @@
 					<h3>团购</h3>
 					<a href="#">全场2折起低至99元</a>
 				</div>
-				<div class="content">
-					<div class="content_left">
+				<div class="content clear">
+				<div class="content_left left">
 						<div class="banner">
-							<a href="#"><img src="../img/1_20180530113041_50.jpg" alt=""></a>
-							<!-- <div class="right_btn">
-								<span>1</span>/5
-							</div>
-							<div class="left_btn">
-								<span>1</span>/5
-							</div>
-							<ul>
-								<li class="active"></li>
-								<li></li>
-								<li></li>
-								<li></li>
-							</ul>
-						</div>
-						<div></div>
-						<div></div>
-						<div></div> -->
+							<a href="#"><img src="http://cdnimg.ocj.com.cn/image_site/shop/conts/8021/6741/10704/12343/1_20180608091729_1.jpg" alt=""></a>
 						</div>
 					</div>
-					<ul class="content_right left">
-						<li>
-							<div class="commodity_pic">
-								<a href="#"><img src="" alt=""></a>
-							</div>
-							<div class="commodity_intro">
-								<a href="#">世豹(CL) CL65铝合金断桥窗系统（3㎡订金货号）[升级款]</a>
-							</div>
-							<div class="commodity_price">
-								<span>￥2997</span>
-							</div>
-						</li>
-						<li>
-							<div class="commodity_pic">
-								<a href="#"><img src="" alt=""></a>
-							</div>
-							<div class="commodity_intro">
-								<a href="#">世豹(CL) CL65铝合金断桥窗系统（3㎡订金货号）[升级款]</a>
-							</div>
-							<div class="commodity_price">
-								<span>￥2997</span>
-							</div>
-						</li>
-						<li>
-							<div class="commodity_pic">
-								<a href="#"><img src="" alt=""></a>
-							</div>
-							<div class="commodity_intro">
-								<a href="#">世豹(CL) CL65铝合金断桥窗系统（3㎡订金货号）[升级款]</a>
-							</div>
-							<div class="commodity_price">
-								<span>￥2997</span>
-							</div>
-						</li>
+					<ul class="content_right">
+						<div class="position_box clear">							
+							<li >
+								<div class="commodity_img">
+									<a href="#"><img src="" alt=""></a>
+								</div>
+								<div class="commodity_intro">
+									<a href="#"></a>
+								</div>
+								<div class="commodity_price">
+									<span class="price"></span>
+								</div>
+							</li>
+							<li>
+								<div class="commodity_img">
+									<a href="#"><img src="" alt=""></a>
+								</div>
+								<div class="commodity_intro">
+									<a href="#"></a>
+								</div>
+								<div class="commodity_price">
+									<span class="price"></span>
+								</div>
+							</li>
+							<li>
+								<div class="commodity_img">
+									<a href="#"><img src="" alt=""></a>
+								</div>
+								<div class="commodity_intro">
+									<a href="#"></a>
+								</div>
+								<div class="commodity_price">
+									<span class="price"></span>
+								</div>
+							</li>
+						</div>
+						<div class="position_box clear">
+							<li>
+								<div class="commodity_img">
+									<a href="#"><img src="" alt=""></a>
+								</div>
+								<div class="commodity_intro">
+									<a href="#"></a>
+								</div>
+								<div class="commodity_price">
+									<span class="price"></span>
+								</div>
+							</li>
+							<li>
+								<div class="commodity_img">
+									<a href="#"><img src="" alt=""></a>
+								</div>
+								<div class="commodity_intro">
+									<a href="#"></a>
+								</div>
+								<div class="commodity_price">
+									<span class="price"></span>
+								</div>
+							</li>
+							<li>
+								<div class="commodity_img">
+									<a href="#"><img src="" alt=""></a>
+								</div>
+								<div class="commodity_intro">
+									<a href="#"></a>
+								</div>
+								<div class="commodity_price">
+									<span class="price"></span>
+								</div>
+							</li>
+						</div>
 					</ul>
 				</div>
 			</div>
@@ -377,14 +597,20 @@
 				<div class="content">
 					<div class="content_left">
 						<div class="banner">
-							<a href="#"><img src="../img/2_20180514144510_55.jpg" alt=""></a>
+							<ul class="smallbanner clear">
+								<li><a href="#"><img src="" alt=""></a></li>
+								<li><a href="#"><img src="" alt=""></a></li>
+								<li><a href="#"><img src="" alt=""></a></li>
+								<li><a href="#"><img src="" alt=""></a></li>
+								<li><a href="#"><img src="" alt=""></a></li>
+							</ul>
 							<div class="right_btn">
 								<span>1</span>/5
 							</div>
 							<div class="left_btn">
 								<span>1</span>/5
 							</div>
-							<ul>
+							<ul class="circle_btn">
 								<li class="active"></li>
 								<li></li>
 								<li></li>
@@ -399,43 +625,43 @@
 					</div>
 					<ul class="content_right left">
 						<li>
-							<div class="commodity_pic">
+							<div class="commodity_img">
 								<a href="#"><img src="" alt=""></a>
 							</div>
 							<div class="commodity_intro">
-								<a href="#">世豹(CL) CL65铝合金断桥窗系统（3㎡订金货号）[升级款]</a>
+								<a href="#"></a>
 							</div>
 							<div class="commodity_price">
-								<span class="price">￥2997</span>
+								<span class="price"></span>
 							</div>
 						</li>
 						<li>
-						<div class="commodity_pic">
+						<div class="commodity_img">
 							<a href="#"><img src="" alt=""></a>
 						</div>
 						<div class="commodity_intro">
-							<a href="#">世豹(CL) CL65铝合金断桥窗系统（3㎡订金货号）[升级款]</a>
+							<a href="#"></a>
 						</div>
 						<div class="commodity_price">
-							<span class="price">￥2997</span>
+							<span class="price"></span>
 						</div>
 					</li>
 					<li>
-						<div class="commodity_pic">
+						<div class="commodity_img">
 							<a href="#"><img src="" alt=""></a>
 						</div>
 						<div class="commodity_intro">
-							<a href="#">世豹(CL) CL65铝合金断桥窗系统（3㎡订金货号）[升级款]</a>
+							<a href="#"></a>
 						</div>
 						<div class="commodity_price">
-							<span class="price">￥2997</span>
+							<span class="price"></span>
 						</div>
 					</li>
 					</ul>
 				</div>
 			</div>
 			<div class="big_advertising">
-				<a href="#"><img src="../img/2_20180410094752_48.jpg" alt=""></a>
+				<a href="#"><img src="http://cdnimg.ocj.com.cn/image_site/shop/conts/8021/6741/11543/13621/1_20180514151342_64.jpg" alt=""></a>
 				<div class="right_btn">
 					<span>1</span>/5
 				</div>
@@ -444,10 +670,10 @@
 				</div>
 			</div>
 			<div class="sorting">
-				<div class="food_beverage clear">
+				<div class="food_beverage louti clear">
 					<div class="content_title">
-						<h3>主播推荐</h3>
-						<a href="#">TV购物 热卖排行</a>
+						<h3>食品饮料</h3>
+						<a href="#">省心又美味</a>
 						<div class="more">
 							<a href="#">更多商品</a>
 						</div>
@@ -456,14 +682,18 @@
 						<div class="content_left">
 							<div>
 								<div class="banner">
-									<a href="#"><img src="../img/1_20170630133153_95.jpg" alt=""></a>
-									<div class="right_btn">
-										<span>1</span>/5
+									<ul class="smallbanner">
+										<li><a href="#"><img src="" alt=""></a></li>
+										<li><a href="#"><img src="" alt=""></a></li>
+										<li><a href="#"><img src="" alt=""></a></li>
+									</ul>
+									<div class="btn right_btn">
+										<span>1</span>/3
 									</div>
-									<div class="left_btn">
-										<span>1</span>/5
+									<div class="btn left_btn">
+										<span>1</span>/3
 									</div>
-									<ul>
+									<ul class="circle_btn">
 										<li class="active"></li>
 										<li></li>
 										<li></li>
@@ -472,48 +702,48 @@
 								<ul class="fenlei">
 									<li>
 										<a href="#">
-											<div>
-												<img src="../img/1.png" alt="">
+											<div class="xiaotubiao">
+												<img src="http://cdnimg.ocj.com.cn/image_site/shop/conts/8021/6741/9920/11194/1_20150731101325_32.png" alt="">
 											</div>
 											<p>滋补养生</p>
 										</a>
 									</li>
 									<li>
 										<a href="#">
-											<div>
-												<img src="../img/2.png" alt="">
+											<div class="xiaotubiao">
+												<img src="http://cdnimg.ocj.com.cn/image_site/shop/conts/8021/6741/9920/11194/1_20150731101354_99.png" alt="">
 											</div>
 											<p>新鲜蔬果</p>
 										</a>
 									</li>
 									<li>
 										<a href="#">
-											<div>
-												<img src="../img/3.png" alt="">
+											<div class="xiaotubiao">
+												<img src="http://cdnimg.ocj.com.cn/image_site/shop/conts/8021/6741/9920/11194/1_20150731101522_96.png" alt="">
 											</div>
 											<p>粮油干货</p>
 										</a>
 									</li>
 									<li>
 										<a href="#">
-											<div>
-												<img src="../img/4.png" alt="">
+											<div class="xiaotubiao">
+												<img src="http://cdnimg.ocj.com.cn/image_site/shop/conts/8021/6741/9920/11194/1_20150731101440_28.png" alt="">
 											</div>
 											<p>生鲜食材</p>
 										</a>
 									</li>
 									<li>
 										<a href="#">
-											<div>
-												<img src="../img/5.png" alt="">
+											<div class="xiaotubiao">
+												<img src="http://cdnimg.ocj.com.cn/image_site/shop/conts/8021/6741/9920/11194/1_20150731101506_75.png" alt="">
 											</div>
 											<p>酒水饮料</p>
 										</a>
 									</li>
 									<li>
 										<a href="#">
-											<div>
-												<img src="../img/6.png" alt="">
+											<div class="xiaotubiao">
+												<img src="http://cdnimg.ocj.com.cn/image_site/shop/conts/8021/6741/9920/11194/1_20150731101623_25.png" alt="">
 											</div>
 											<p>休闲食品</p>
 										</a>
@@ -525,99 +755,99 @@
 						</div>
 						<ul class="content_right left">
 							<li>
-								<div class="commodity_pic">
+								<div class="commodity_img">
 									<a href="#"><img src="" alt=""></a>
 								</div>
 								<div class="commodity_intro">
-									<a href="#">世豹(CL) CL65铝合金断桥窗系统（3㎡订金货号）[升级款]</a>
+									<a href="#"></a>
 								</div>
 								<div class="commodity_price">
-									<span class="price">￥2997</span>
+									<span class="price"></span>
 								</div>
 							</li>
 							<li>
-								<div class="commodity_pic">
+								<div class="commodity_img">
 									<a href="#"><img src="" alt=""></a>
 								</div>
 								<div class="commodity_intro">
-									<a href="#">世豹(CL) CL65铝合金断桥窗系统（3㎡订金货号）[升级款]</a>
+									<a href="#"></a>
 								</div>
 								<div class="commodity_price">
-									<span class="price">￥2997</span>
+									<span class="price"></span>
 								</div>
 							</li>
 							<li>
-								<div class="commodity_pic">
+								<div class="commodity_img">
 									<a href="#"><img src="" alt=""></a>
 								</div>
 								<div class="commodity_intro">
-									<a href="#">世豹(CL) CL65铝合金断桥窗系统（3㎡订金货号）[升级款]</a>
+									<a href="#"></a>
 								</div>
 								<div class="commodity_price">
-									<span class="price">￥2997</span>
+									<span class="price"></span>
 								</div>
 							</li>
 							<li>
-								<div class="commodity_pic">
+								<div class="commodity_img">
 									<a href="#"><img src="" alt=""></a>
 								</div>
 								<div class="commodity_intro">
-									<a href="#">世豹(CL) CL65铝合金断桥窗系统（3㎡订金货号）[升级款]</a>
+									<a href="#"></a>
 								</div>
 								<div class="commodity_price">
-									<span class="price">￥2997</span>
+									<span class="price"></span>
 								</div>
 							</li>
 							<li>
-								<div class="commodity_pic">
+								<div class="commodity_img">
 									<a href="#"><img src="" alt=""></a>
 								</div>
 								<div class="commodity_intro">
-									<a href="#">世豹(CL) CL65铝合金断桥窗系统（3㎡订金货号）[升级款]</a>
+									<a href="#"></a>
 								</div>
 								<div class="commodity_price">
-									<span class="price">￥2997</span>
+									<span class="price"></span>
 								</div>
 							</li>
 							<li>
-								<div class="commodity_pic">
+								<div class="commodity_img">
 									<a href="#"><img src="" alt=""></a>
 								</div>
 								<div class="commodity_intro">
-									<a href="#">世豹(CL) CL65铝合金断桥窗系统（3㎡订金货号）[升级款]</a>
+									<a href="#"></a>
 								</div>
 								<div class="commodity_price">
-									<span class="price">￥2997</span>
+									<span class="price"></span>
 								</div>
 							</li>
 							<li>
-								<div class="commodity_pic">
+								<div class="commodity_img">
 									<a href="#"><img src="" alt=""></a>
 								</div>
 								<div class="commodity_intro">
-									<a href="#">世豹(CL) CL65铝合金断桥窗系统（3㎡订金货号）[升级款]</a>
+									<a href="#"></a>
 								</div>
 								<div class="commodity_price">
-									<span class="price">￥2997</span>
+									<span class="price"></span>
 								</div>
 							</li>
 							<li>
-								<div class="commodity_pic">
+								<div class="commodity_img">
 									<a href="#"><img src="" alt=""></a>
 								</div>
 								<div class="commodity_intro">
-									<a href="#">世豹(CL) CL65铝合金断桥窗系统（3㎡订金货号）[升级款]</a>
+									<a href="#"></a>
 								</div>
 								<div class="commodity_price">
-									<span class="price">￥2997</span>
+									<span class="price"></span>
 								</div>
 							</li>
 						</ul>
 					</div>
 				</div>
-				<div class="kitchen_furniture clear">
+				<div class="kitchen_furniture louti clear">
 					<div class="content_title">
-						<h3>家具厨房</h3>
+						<h3>家居厨房</h3>
 						<a href="#">变身大厨的好帮手</a>
 						<div class="more">
 							<a href="#">更多商品</a>
@@ -627,15 +857,22 @@
 						<div class="content_left">
 							<div>
 								<div class="banner">
-									<a href="#"><img src="../img/1_20170630133153_95.jpg" alt=""></a>
+									<ul class="smallbanner">
+										<li><a href="#"><img src="" alt=""></a></li>
+										<li><a href="#"><img src="" alt=""></a></li>
+										<li><a href="#"><img src="" alt=""></a></li>
+										<li><a href="#"><img src="" alt=""></a></li>
+										<li><a href="#"><img src="" alt=""></a></li>
+									</ul>
 									<div class="right_btn">
 										<span>1</span>/5
 									</div>
 									<div class="left_btn">
 										<span>1</span>/5
 									</div>
-									<ul>
+									<ul class="circle_btn">
 										<li class="active"></li>
+										<li></li>
 										<li></li>
 										<li></li>
 									</ul>
@@ -653,9 +890,9 @@
 										</div>
 									</div>
 									<div class="picture">
-										<a href="#"><img src="../img/1_20150903140113_86.jpg" alt=""></a>
-										<a href="#"><img src="../img/1_20150903140054_66.jpg" alt=""></a>
-										<a href="#"><img src="../img/1_20150906182058_22.jpg" alt=""></a>
+										<a href="#"><img src="http://cdnimg.ocj.com.cn/image_site/shop/conts/8021/6741/9921/11201/1_20150903140113_86.jpg" alt=""></a>
+										<a href="#"><img src="http://cdnimg.ocj.com.cn/image_site/shop/conts/8021/6741/9921/11201/1_20150903140054_66.jpg" alt=""></a>
+										<a href="#"><img src="http://cdnimg.ocj.com.cn/image_site/shop/conts/8021/6741/9921/11201/1_20150906182058_22.jpg" alt=""></a>
 									</div>
 									<ul>
 										<li><a href="#">榨汁/搅拌</a></li>
@@ -674,97 +911,97 @@
 						</div>
 						<ul class="content_right left">
 							<li>
-								<div class="commodity_pic">
+								<div class="commodity_img">
 									<a href="#"><img src="" alt=""></a>
 								</div>
 								<div class="commodity_intro">
-									<a href="#">世豹(CL) CL65铝合金断桥窗系统（3㎡订金货号）[升级款]</a>
+									<a href="#"></a>
 								</div>
 								<div class="commodity_price">
-									<span class="price">￥2997</span>
+									<span class="price"></span>
 								</div>
 							</li>
 							<li>
-								<div class="commodity_pic">
+								<div class="commodity_img">
 									<a href="#"><img src="" alt=""></a>
 								</div>
 								<div class="commodity_intro">
-									<a href="#">世豹(CL) CL65铝合金断桥窗系统（3㎡订金货号）[升级款]</a>
+									<a href="#"></a>
 								</div>
 								<div class="commodity_price">
-									<span class="price">￥2997</span>
+									<span class="price"></span>
 								</div>
 							</li>
 							<li>
-								<div class="commodity_pic">
+								<div class="commodity_img">
 									<a href="#"><img src="" alt=""></a>
 								</div>
 								<div class="commodity_intro">
-									<a href="#">世豹(CL) CL65铝合金断桥窗系统（3㎡订金货号）[升级款]</a>
+									<a href="#"></a>
 								</div>
 								<div class="commodity_price">
-									<span class="price">￥2997</span>
+									<span class="price"></span>
 								</div>
 							</li>
 							<li>
-								<div class="commodity_pic">
+								<div class="commodity_img">
 									<a href="#"><img src="" alt=""></a>
 								</div>
 								<div class="commodity_intro">
-									<a href="#">世豹(CL) CL65铝合金断桥窗系统（3㎡订金货号）[升级款]</a>
+									<a href="#"></a>
 								</div>
 								<div class="commodity_price">
-									<span class="price">￥2997</span>
+									<span class="price"></span>
 								</div>
 							</li>
 							<li>
-								<div class="commodity_pic">
+								<div class="commodity_img">
 									<a href="#"><img src="" alt=""></a>
 								</div>
 								<div class="commodity_intro">
-									<a href="#">世豹(CL) CL65铝合金断桥窗系统（3㎡订金货号）[升级款]</a>
+									<a href="#"></a>
 								</div>
 								<div class="commodity_price">
-									<span class="price">￥2997</span>
+									<span class="price"></span>
 								</div>
 							</li>
 							<li>
-								<div class="commodity_pic">
+								<div class="commodity_img">
 									<a href="#"><img src="" alt=""></a>
 								</div>
 								<div class="commodity_intro">
-									<a href="#">世豹(CL) CL65铝合金断桥窗系统（3㎡订金货号）[升级款]</a>
+									<a href="#"></a>
 								</div>
 								<div class="commodity_price">
-									<span class="price">￥2997</span>
+									<span class="price"></span>
 								</div>
 							</li>
 							<li>
-								<div class="commodity_pic">
+								<div class="commodity_img">
 									<a href="#"><img src="" alt=""></a>
 								</div>
 								<div class="commodity_intro">
-									<a href="#">世豹(CL) CL65铝合金断桥窗系统（3㎡订金货号）[升级款]</a>
+									<a href="#"></a>
 								</div>
 								<div class="commodity_price">
-									<span class="price">￥2997</span>
+									<span class="price"></span>
 								</div>
 							</li>
 							<li>
-								<div class="commodity_pic">
+								<div class="commodity_img">
 									<a href="#"><img src="" alt=""></a>
 								</div>
 								<div class="commodity_intro">
-									<a href="#">世豹(CL) CL65铝合金断桥窗系统（3㎡订金货号）[升级款]</a>
+									<a href="#"></a>
 								</div>
 								<div class="commodity_price">
-									<span class="price">￥2997</span>
+									<span class="price"></span>
 								</div>
 							</li>
 						</ul>
 					</div>
 				</div>
-				<div class="household_appliances clear">
+				<div class="household_appliances louti clear">
 					<div class="content_title">
 						<h3>3C家电</h3>
 						<a href="#">强劲净化 简单呼吸</a>
@@ -776,14 +1013,20 @@
 						<div class="content_left">
 							<div>
 								<div class="banner">
-									<a href="#"><img src="../img/1_20170630133153_95.jpg" alt=""></a>
+									<ul class="smallbanner">
+										<li><a href="#"><img src="" alt=""></a></li>
+										<li><a href="#"><img src="" alt=""></a></li>
+										<li><a href="#"><img src="" alt=""></a></li>
+										<li><a href="#"><img src="" alt=""></a></li>
+										<li><a href="#"><img src="" alt=""></a></li>
+									</ul>									
 									<div class="right_btn">
 										<span>1</span>/5
 									</div>
 									<div class="left_btn">
 										<span>1</span>/5
 									</div>
-									<ul>
+									<ul class="circle_btn">
 										<li class="active"></li>
 										<li></li>
 										<li></li>
@@ -792,10 +1035,10 @@
 								<div class="content_left_b">
 									<div class="trademark">
 										<div>
-											<a href="#"><img src="../img/geli.jpg" alt="格力"></a>
-											<a href="#"><img src="../img/1_20170421100530_53.jpg" alt="格力"></a>
-											<a href="#"><img src="../img/1_20150731170915_38.jpg" alt="格力"></a>
-											<a href="#"><img src="../img/1_20150812212553_73.jpg" alt="格力"></a>
+											<a href="#"><img src="http://cdnimg.ocj.com.cn/image_site/shop/conts/8021/6741/9923/11213/1_20170324125208_91.jpg" alt="格力"></a>
+											<a href="#"><img src="http://cdnimg.ocj.com.cn/image_site/shop/conts/8021/6741/9923/11213/1_20170421100530_53.jpg" alt="格力"></a>
+											<a href="#"><img src="http://cdnimg.ocj.com.cn/image_site/shop/conts/8021/6741/9923/11213/1_20150731170915_38.jpg" alt="格力"></a>
+											<a href="#"><img src="http://cdnimg.ocj.com.cn/image_site/shop/conts/8021/6741/9923/11213/1_20150812212553_73.jpg" alt="格力"></a>
 										</div>
 									
 										<ul>
@@ -822,97 +1065,97 @@
 						</div>
 						<ul class="content_right left">
 							<li>
-								<div class="commodity_pic">
+								<div class="commodity_img">
 									<a href="#"><img src="" alt=""></a>
 								</div>
 								<div class="commodity_intro">
-									<a href="#">世豹(CL) CL65铝合金断桥窗系统（3㎡订金货号）[升级款]</a>
+									<a href="#"></a>
 								</div>
 								<div class="commodity_price">
-									<span class="price">￥2997</span>
+									<span class="price"></span>
 								</div>
 							</li>
 							<li>
-								<div class="commodity_pic">
+								<div class="commodity_img">
 									<a href="#"><img src="" alt=""></a>
 								</div>
 								<div class="commodity_intro">
-									<a href="#">世豹(CL) CL65铝合金断桥窗系统（3㎡订金货号）[升级款]</a>
+									<a href="#"></a>
 								</div>
 								<div class="commodity_price">
-									<span class="price">￥2997</span>
+									<span class="price"></span>
 								</div>
 							</li>
 							<li>
-								<div class="commodity_pic">
+								<div class="commodity_img">
 									<a href="#"><img src="" alt=""></a>
 								</div>
 								<div class="commodity_intro">
-									<a href="#">世豹(CL) CL65铝合金断桥窗系统（3㎡订金货号）[升级款]</a>
+									<a href="#"></a>
 								</div>
 								<div class="commodity_price">
-									<span class="price">￥2997</span>
+									<span class="price"></span>
 								</div>
 							</li>
 							<li>
-								<div class="commodity_pic">
+								<div class="commodity_img">
 									<a href="#"><img src="" alt=""></a>
 								</div>
 								<div class="commodity_intro">
-									<a href="#">世豹(CL) CL65铝合金断桥窗系统（3㎡订金货号）[升级款]</a>
+									<a href="#"></a>
 								</div>
 								<div class="commodity_price">
-									<span class="price">￥2997</span>
+									<span class="price"></span>
 								</div>
 							</li>
 							<li>
-								<div class="commodity_pic">
+								<div class="commodity_img">
 									<a href="#"><img src="" alt=""></a>
 								</div>
 								<div class="commodity_intro">
-									<a href="#">世豹(CL) CL65铝合金断桥窗系统（3㎡订金货号）[升级款]</a>
+									<a href="#"></a>
 								</div>
 								<div class="commodity_price">
-									<span class="price">￥2997</span>
+									<span class="price"></span>
 								</div>
 							</li>
 							<li>
-								<div class="commodity_pic">
+								<div class="commodity_img">
 									<a href="#"><img src="" alt=""></a>
 								</div>
 								<div class="commodity_intro">
-									<a href="#">世豹(CL) CL65铝合金断桥窗系统（3㎡订金货号）[升级款]</a>
+									<a href="#"></a>
 								</div>
 								<div class="commodity_price">
-									<span class="price">￥2997</span>
+									<span class="price"></span>
 								</div>
 							</li>
 							<li>
-								<div class="commodity_pic">
+								<div class="commodity_img">
 									<a href="#"><img src="" alt=""></a>
 								</div>
 								<div class="commodity_intro">
-									<a href="#">世豹(CL) CL65铝合金断桥窗系统（3㎡订金货号）[升级款]</a>
+									<a href="#"></a>
 								</div>
 								<div class="commodity_price">
-									<span class="price">￥2997</span>
+									<span class="price"></span>
 								</div>
 							</li>
 							<li>
-								<div class="commodity_pic">
+								<div class="commodity_img">
 									<a href="#"><img src="" alt=""></a>
 								</div>
 								<div class="commodity_intro">
-									<a href="#">世豹(CL) CL65铝合金断桥窗系统（3㎡订金货号）[升级款]</a>
+									<a href="#"></a>
 								</div>
 								<div class="commodity_price">
-									<span class="price">￥2997</span>
+									<span class="price"></span>
 								</div>
 							</li>
 						</ul>
 					</div>
 				</div>
-				<div class="costume clear">
+				<div class="costume louti clear">
 					<div class="content_title">
 						<h3>时尚服饰</h3>
 						<a href="#">瑞士CURAPROX牙刷</a>
@@ -924,14 +1167,20 @@
 						<div class="content_left">
 							<div>
 								<div class="banner">
-									<a href="#"><img src="../img/1_20170630133153_95.jpg" alt=""></a>
+									<ul class="smallbanner">
+										<li><a href="#"><img src="" alt=""></a></li>
+										<li><a href="#"><img src="" alt=""></a></li>
+										<li><a href="#"><img src="" alt=""></a></li>
+										<li><a href="#"><img src="" alt=""></a></li>
+										<li><a href="#"><img src="" alt=""></a></li>
+									</ul>
 									<div class="right_btn">
 										<span>1</span>/5
 									</div>
 									<div class="left_btn">
 										<span>1</span>/5
 									</div>
-									<ul>
+									<ul class="circle_btn">
 										<li class="active"></li>
 										<li></li>
 										<li></li>
@@ -940,14 +1189,14 @@
 								</div>
 								<div class="content_left_b">
 									<div>
-										<div><a href="#"><img src="../img/1_20150817104318_93.jpg" alt=""></a></div>
-										<div><a href="#"><img src="../img/1_20160318212855_16.jpg" alt=""></a></div>
-										<div><a href="#"><img src="../img/1_20150903140054_66.jpg" alt=""></a></div>
-										<div><a href="#"><img src="../img/1_20170322133636_68.jpg" alt=""></a></div>
-										<div><a href="#"><img src="../img/1_20170327165036_77.jpg" alt=""></a></div>
-										<div><a href="#"><img src="../img/1_20151223192954_26.jpg" alt=""></a></div>
-										<div><a href="#"><img src="../img/1_20170322133636_68.jpg" alt=""></a></div>
-										<div><a href="#"><img src="../img/1_20151203173637_12.jpg" alt=""></a></div>
+										<div><a href="#"><img src="http://cdnimg.ocj.com.cn/image_site/shop/conts/8021/6741/9931/11246/1_20150817104318_93.jpg" alt=""></a></div>
+										<div><a href="#"><img src="http://cdnimg.ocj.com.cn/image_site/shop/conts/8021/6741/9931/11472/1_20160318212855_16.jpg" alt=""></a></div>
+										<div><a href="#"><img src="http://cdnimg.ocj.com.cn/image_site/shop/conts/8021/6741/9931/11246/1_20170327164249_66.jpg" alt=""></a></div>
+										<div><a href="#"><img src="http://cdnimg.ocj.com.cn/image_site/shop/conts/8021/6741/9931/11472/1_20171019170739_68.jpg" alt=""></a></div>
+										<div><a href="#"><img src="http://cdnimg.ocj.com.cn/image_site/shop/conts/8021/6741/9931/11246/1_20170327165036_77.jpg" alt=""></a></div>
+										<div><a href="#"><img src="http://cdnimg.ocj.com.cn/image_site/shop/conts/8021/6741/9931/11472/1_20151223192954_26.jpg" alt=""></a></div>
+										<div><a href="#"><img src="http://cdnimg.ocj.com.cn/image_site/shop/conts/8021/6741/9931/11246/1_20170322133636_68.jpg" alt=""></a></div>
+										<div><a href="#"><img src="http://cdnimg.ocj.com.cn/image_site/shop/conts/8021/6741/9931/11472/1_20151203173637_12.jpg" alt=""></a></div>
 									</div>
 								</div>
 							</div>
@@ -956,91 +1205,91 @@
 						</div>
 						<ul class="content_right left">
 							<li>
-								<div class="commodity_pic">
+								<div class="commodity_img">
 									<a href="#"><img src="" alt=""></a>
 								</div>
 								<div class="commodity_intro">
-									<a href="#">世豹(CL) CL65铝合金断桥窗系统（3㎡订金货号）[升级款]</a>
+									<a href="#"></a>
 								</div>
 								<div class="commodity_price">
-									<span class="price">￥2997</span>
+									<span class="price"></span>
 								</div>
 							</li>
 							<li>
-								<div class="commodity_pic">
+								<div class="commodity_img">
 									<a href="#"><img src="" alt=""></a>
 								</div>
 								<div class="commodity_intro">
-									<a href="#">世豹(CL) CL65铝合金断桥窗系统（3㎡订金货号）[升级款]</a>
+									<a href="#"></a>
 								</div>
 								<div class="commodity_price">
-									<span class="price">￥2997</span>
+									<span class="price"></span>
 								</div>
 							</li>
 							<li>
-								<div class="commodity_pic">
+								<div class="commodity_img">
 									<a href="#"><img src="" alt=""></a>
 								</div>
 								<div class="commodity_intro">
-									<a href="#">世豹(CL) CL65铝合金断桥窗系统（3㎡订金货号）[升级款]</a>
+									<a href="#"></a>
 								</div>
 								<div class="commodity_price">
-									<span class="price">￥2997</span>
+									<span class="price"></span>
 								</div>
 							</li>
 							<li>
-								<div class="commodity_pic">
+								<div class="commodity_img">
 									<a href="#"><img src="" alt=""></a>
 								</div>
 								<div class="commodity_intro">
-									<a href="#">世豹(CL) CL65铝合金断桥窗系统（3㎡订金货号）[升级款]</a>
+									<a href="#"></a>
 								</div>
 								<div class="commodity_price">
-									<span class="price">￥2997</span>
+									<span class="price"></span>
 								</div>
 							</li>
 							<li>
-								<div class="commodity_pic">
+								<div class="commodity_img">
 									<a href="#"><img src="" alt=""></a>
 								</div>
 								<div class="commodity_intro">
-									<a href="#">世豹(CL) CL65铝合金断桥窗系统（3㎡订金货号）[升级款]</a>
+									<a href="#"></a>
 								</div>
 								<div class="commodity_price">
-									<span class="price">￥2997</span>
+									<span class="price"></span>
 								</div>
 							</li>
 							<li>
-								<div class="commodity_pic">
+								<div class="commodity_img">
 									<a href="#"><img src="" alt=""></a>
 								</div>
 								<div class="commodity_intro">
-									<a href="#">世豹(CL) CL65铝合金断桥窗系统（3㎡订金货号）[升级款]</a>
+									<a href="#"></a>
 								</div>
 								<div class="commodity_price">
-									<span class="price">￥2997</span>
+									<span class="price"></span>
 								</div>
 							</li>
 							<li>
-								<div class="commodity_pic">
+								<div class="commodity_img">
 									<a href="#"><img src="" alt=""></a>
 								</div>
 								<div class="commodity_intro">
-									<a href="#">世豹(CL) CL65铝合金断桥窗系统（3㎡订金货号）[升级款]</a>
+									<a href="#"></a>
 								</div>
 								<div class="commodity_price">
-									<span class="price">￥2997</span>
+									<span class="price"></span>
 								</div>
 							</li>
 							<li>
-								<div class="commodity_pic">
+								<div class="commodity_img">
 									<a href="#"><img src="" alt=""></a>
 								</div>
 								<div class="commodity_intro">
-									<a href="#">世豹(CL) CL65铝合金断桥窗系统（3㎡订金货号）[升级款]</a>
+									<a href="#"></a>
 								</div>
 								<div class="commodity_price">
-									<span class="price">￥2997</span>
+									<span class="price"></span>
 								</div>
 							</li>
 						</ul>
@@ -1057,7 +1306,7 @@
 						<div class="shop">
 							<div class="shop_info">
 								<div class="shop_name">
-									<a href="#"><img src="../img/4_20180409141520_43.jpg" alt=""></a>
+									<a href="#"><img src="http://cdnimg.ocj.com.cn/image_site/shop/conts/8021/6741/11881/14118/4_20180409141520_43.jpg" alt=""></a>
 									<h3><a href="#">好雄食品专营店</a></h3>
 									<div><a href="#">更过美味 更多品味</a></div>
 								</div>
@@ -1066,29 +1315,29 @@
 										<p><a href="#">[商城]豪雄 薄皮核桃250gx3袋</a></p>
 										<span class="price">￥88</span>
 									</div>
-									<div class="commodity_pic"><a href="#"><img src="../img/15190395L.jpg" alt=""></a></div>
+									<div class="commodity_pic"><a href="#"><img src="https://cdnimg.ocj.com.cn/item_images/item/15/19/0395/15190395L.jpg" alt=""></a></div>
 								</div>
 							</div>
 							<div class="three_shop">
 								<div class="commodity">
-									<a href="#"><img src="../img/15167846L.jpg" alt=""></a>
+									<a href="#"><img src="" class="shop_img"></a>
 									<div class="shop_info">
-										<p><a href="#">[商城]豪雄 黄冰糖454gx4袋</a></p>
-										<span class="price">￥88</span>
+										<p><a href="#"></a></p>
+										<span class="price"></span>
 									</div>			
 								</div>
 								<div class="commodity">
-									<a href="#"><img src="../img/15167846L.jpg" alt=""></a>
+									<a href="#"><img src="" class="shop_img"></a>
 									<div class="shop_info">
-										<p><a href="#">[商城]豪雄 黄冰糖454gx4袋</a></p>
-										<span class="price">￥88</span>
+										<p><a href="#"></a></p>
+										<span class="price"></span>
 									</div>
 								</div>
 								<div class="commodity">
-									<a href="#"><img src="../img/15167846L.jpg" alt=""></a>
+									<a href="#"><img src="" class="shop_img"></a>
 									<div class="shop_info">
-										<p><a href="#">[商城]豪雄 黄冰糖454gx4袋</a></p>
-										<span class="price">￥88</span>
+										<p><a href="#"></a></p>
+										<span class="price"></span>
 									</div>
 								</div>
 							</div>
@@ -1096,38 +1345,38 @@
 						<div class="shop">
 							<div class="shop_info">
 								<div class="shop_name">
-									<a href="#"><img src="../img/4_20180409141520_43.jpg" alt=""></a>
-									<h3><a href="#">好雄食品专营店</a></h3>
-									<div><a href="#">更过美味 更多品味</a></div>
+									<a href="#"><img src="http://cdnimg.ocj.com.cn/image_site/shop/conts/8021/6741/11881/14118/1_20171212105611_81.jpg" ></a>
+									<h3><a href="#">浪莎官方旗舰店</a></h3>
+									<div><a href="#">不止是吸引</a></div>
 								</div>
 								<div class="first_commodity">
 									<div class="product_description">
 										<p><a href="#">[商城]豪雄 薄皮核桃250gx3袋</a></p>
 										<span class="price">￥88</span>
 									</div>
-									<div class="commodity_pic"><a href="#"><img src="../img/15190395L.jpg" alt=""></a></div>
+									<div class="commodity_pic"><a href="#"><img src="https://cdnimg.ocj.com.cn/item_images/item/15/20/9592/15209592L.jpg" alt=""></a></div>
 								</div>
 							</div>
 							<div class="three_shop">
 								<div class="commodity">
-									<a href="#"><img src="../img/15167846L.jpg" alt=""></a>
+									<a href="#"><img src="" class="shop_img"></a>
 									<div class="shop_info">
-										<p><a href="#">[商城]豪雄 黄冰糖454gx4袋</a></p>
-										<span class="price">￥88</span>
+										<p><a href="#"></a></p>
+										<span class="price"></span>
 									</div>			
 								</div>
 								<div class="commodity">
-									<a href="#"><img src="../img/15167846L.jpg" alt=""></a>
+									<a href="#"><img src="" class="shop_img"></a>
 									<div class="shop_info">
-										<p><a href="#">[商城]豪雄 黄冰糖454gx4袋</a></p>
-										<span class="price">￥88</span>
+										<p><a href="#"></a></p>
+										<span class="price"></span>
 									</div>
 								</div>
 								<div class="commodity">
-									<a href="#"><img src="../img/15167846L.jpg" alt=""></a>
+									<a href="#"><img src="" class="shop_img"></a>
 									<div class="shop_info">
-										<p><a href="#">[商城]豪雄 黄冰糖454gx4袋</a></p>
-										<span class="price">￥88</span>
+										<p><a href="#"></a></p>
+										<span class="price"></span>
 									</div>
 								</div>
 							</div>
@@ -1135,38 +1384,38 @@
 						<div class="shop">
 							<div class="shop_info">
 								<div class="shop_name">
-									<a href="#"><img src="../img/4_20180409141520_43.jpg" alt=""></a>
-									<h3><a href="#">好雄食品专营店</a></h3>
-									<div><a href="#">更过美味 更多品味</a></div>
+									<a href="#"><img src="http://cdnimg.ocj.com.cn/image_site/shop/conts/8021/6741/11881/14118/2_20170327175029_32.jpg" alt=""></a>
+									<h3><a href="#">博孚数码专营店</a></h3>
+									<div><a href="#">智能引领生活</a></div>
 								</div>
 								<div class="first_commodity">
 									<div class="product_description">
 										<p><a href="#">[商城]豪雄 薄皮核桃250gx3袋</a></p>
 										<span class="price">￥88</span>
 									</div>
-									<div class="commodity_pic"><a href="#"><img src="../img/15190395L.jpg" alt=""></a></div>
+									<div class="commodity_pic"><a href="#"><img src="https://cdnimg.ocj.com.cn/item_images/item/15/19/9413/15199413L.jpg" alt=""></a></div>
 								</div>
 							</div>
 							<div class="three_shop">
 								<div class="commodity">
-									<a href="#"><img src="../img/15167846L.jpg" alt=""></a>
+									<a href="#"><img src="" class="shop_img"></a>
 									<div class="shop_info">
-										<p><a href="#">[商城]豪雄 黄冰糖454gx4袋</a></p>
-										<span class="price">￥88</span>
+										<p><a href="#"></a></p>
+										<span class="price"></span>
 									</div>			
 								</div>
 								<div class="commodity">
-									<a href="#"><img src="../img/15167846L.jpg" alt=""></a>
+									<a href="#"><img src="" class="shop_img"></a>
 									<div class="shop_info">
-										<p><a href="#">[商城]豪雄 黄冰糖454gx4袋</a></p>
-										<span class="price">￥88</span>
+										<p><a href="#"></a></p>
+										<span class="price"></span>
 									</div>
 								</div>
 								<div class="commodity">
-									<a href="#"><img src="../img/15167846L.jpg" alt=""></a>
+									<a href="#"><img src="" class="shop_img"></a>
 									<div class="shop_info">
-										<p><a href="#">[商城]豪雄 黄冰糖454gx4袋</a></p>
-										<span class="price">￥88</span>
+										<p><a href="#"></a></p>
+										<span class="price"></span>
 									</div>
 								</div>
 							</div>
@@ -1174,38 +1423,38 @@
 						<div class="shop">
 							<div class="shop_info">
 								<div class="shop_name">
-									<a href="#"><img src="../img/4_20180409141520_43.jpg" alt=""></a>
-									<h3><a href="#">好雄食品专营店</a></h3>
-									<div><a href="#">更过美味 更多品味</a></div>
+									<a href="#"><img src="http://cdnimg.ocj.com.cn/image_site/shop/conts/8021/6741/11881/14118/3_20180209150102_47.jpg" alt=""></a>
+									<h3><a href="#">甄选生活专营店</a></h3>
+									<div><a href="#">甄选品质优质生活</a></div>
 								</div>
 								<div class="first_commodity">
 									<div class="product_description">
 										<p><a href="#">[商城]豪雄 薄皮核桃250gx3袋</a></p>
 										<span class="price">￥88</span>
 									</div>
-									<div class="commodity_pic"><a href="#"><img src="../img/15190395L.jpg" alt=""></a></div>
+									<div class="commodity_pic"><a href="#"><img src="https://cdnimg.ocj.com.cn/item_images/item/15/19/0212/15190212L.jpg" alt=""></a></div>
 								</div>
 							</div>
 							<div class="three_shop clear">
 								<div class="commodity">
-									<a href="#"><img src="../img/15167846L.jpg" alt=""></a>
+									<a href="#"><img src="" class="shop_img"></a>
 									<div class="shop_info">
-										<p><a href="#">[商城]豪雄 黄冰糖454gx4袋</a></p>
-										<span class="price">￥88</span>
+										<p><a href="#"></a></p>
+										<span class="price"></span>
 									</div>			
 								</div>
 								<div class="commodity">
-									<a href="#"><img src="../img/15167846L.jpg" alt=""></a>
+									<a href="#"><img src="" class="shop_img"></a>
 									<div class="shop_info">
-										<p><a href="#">[商城]豪雄 黄冰糖454gx4袋</a></p>
-										<span class="price">￥88</span>
+										<p><a href="#"></a></p>
+										<span class="price"></span>
 									</div>
 								</div>
 								<div class="commodity">
-									<a href="#"><img src="../img/15167846L.jpg" alt=""></a>
+									<a href="#"><img src="" class="shop_img"></a>
 									<div class="shop_info">
-										<p><a href="#">[商城]豪雄 黄冰糖454gx4袋</a></p>
-										<span class="price">￥88</span>
+										<p><a href="#"></a></p>
+										<span class="price"></span>
 									</div>
 								</div>
 							</div>
@@ -1216,63 +1465,63 @@
 					<div class="content_title">
 						<h3>猜你喜欢</h3>
 						<div class="more">
-							<a href="#">换一组?</a>
+							<a href="#">更多商品</a>
 						</div>
 					</div>
 					<ul class="pic_list">
 						<li>
-							<div class="commodity_pic_last">
-								<a href="#"><img src="../img/15189681L.jpg" alt=""></a>
+							<div class="commodity_img commodity_pic_last">
+								<a href="#"><img src="" alt=""></a>
 							</div>
 							<div class="commodity_intro">
 								<a href="#">赛普瑞斯 双面煎不粘锅具套组</a>
 							</div>
 							<div class="commodity_price">
-								<span class="price">￥2997</span>
+								<span class="price"></span>
 							</div>
 						</li>
 						<li>
-							<div class="commodity_pic_last">
-								<a href="#"><img src="../img/15189681L.jpg" alt=""></a>
+							<div class="commodity_img commodity_pic_last">
+								<a href="#"><img src="" alt=""></a>
 							</div>
 							<div class="commodity_intro">
-								<a href="#">世豹(CL) CL65铝合金断桥窗系统（3㎡订金货号）[升级款]</a>
+								<a href="#"></a>
 							</div>
 							<div class="commodity_price">
-								<span class="price">￥2997</span>
+								<span class="price"></span>
 							</div>
 						</li>
 						<li>
-							<div class="commodity_pic_last">
-								<a href="#"><img src="../img/15189681L.jpg" alt=""></a>
+							<div class="commodity_img commodity_pic_last">
+								<a href="#"><img src="" alt=""></a>
 							</div>
 							<div class="commodity_intro">
-								<a href="#">世豹(CL) CL65铝合金断桥窗系统（3㎡订金货号）[升级款]</a>
+								<a href="#"></a>
 							</div>
 							<div class="commodity_price">
-								<span class="price">￥2997</span>
+								<span class="price"></span>
 							</div>
 						</li>
 						<li>
-							<div class="commodity_pic_last">
-								<a href="#"><img src="../img/15189681L.jpg" alt=""></a>
+							<div class="commodity_img commodity_pic_last">
+								<a href="#"><img src="" alt=""></a>
 							</div>
 							<div class="commodity_intro">
-								<a href="#">世豹(CL) CL65铝合金断桥窗系统（3㎡订金货号）[升级款]</a>
+								<a href="#"></a>
 							</div>
 							<div class="commodity_price">
-								<span class="price">￥2997</span>
+								<span class="price"></span>
 							</div>
 						</li>
 						<li>
-							<div class="commodity_pic_last">
-								<a href="#"><img src="../img/15189681L.jpg" alt=""></a>
+							<div class="commodity_img commodity_pic_last">
+								<a href="#"><img src="" alt=""></a>
 							</div>
 							<div class="commodity_intro">
-								<a href="#">世豹(CL) CL65铝合金断桥窗系统（3㎡订金货号）[升级款]</a>
+								<a href="#"></a>
 							</div>
 							<div class="commodity_price">
-								<span class="price">￥2997</span>
+								<span class="price"></span>
 							</div>
 						</li>
 					</ul>		
@@ -1280,7 +1529,7 @@
 				<div class="huiyuan clear">
 					<div class="content_left left">
 						<div class="banner">
-							<a href="#"><img src="../img/1_20171019142354_55.jpg" alt=""></a>
+							<a href="#"><img src="http://cdnimg.ocj.com.cn/image_site/shop/conts/8021/6741/9934/11255/1_20171019142354_55.jpg" alt=""></a>
 							<div class="right_btn">
 								<span>1</span>/5
 							</div>
@@ -1303,27 +1552,27 @@
 						<div class="huiyuan_left_b">
 							<h3>会员特权</h3>
 							<div class="huiyuantequan">
-								<div><a href="#"><img src="../img/1_20150731180900_24.png" alt=""></a></div>
+								<div><a href="#"><img src="http://cdnimg.ocj.com.cn/image_site/shop/conts/8021/6741/9934/11256/1_20150731180900_24.png" alt=""></a></div>
 								<p><a href="#">签到</a></p>
 							</div>
 							<div class="huiyuantequan">
-								<div><a href="#"><img src="../img/1_20150731182429_22.png" alt=""></a></div>
+								<div><a href="#"><img src="http://cdnimg.ocj.com.cn/image_site/shop/conts/8021/6741/9934/11256/1_20150731182429_22.png" alt=""></a></div>
 								<p><a href="#">福利派</a></p>
 							</div>
 							<div class="huiyuantequan">
-								<div><a href="#"><img src="../img/1_20150731182553_63.png" alt=""></a></div>
+								<div><a href="#"><img src="http://cdnimg.ocj.com.cn/image_site/shop/conts/8021/6741/9934/11256/1_20150731182553_63.png" alt=""></a></div>
 								<p><a href="#">会员特价</a></p>
 							</div>
 							<div class="huiyuantequan">
-								<div><a href="#"><img src="../img/1_20150731182622_0.png" alt=""></a></div>
+								<div><a href="#"><img src="http://cdnimg.ocj.com.cn/image_site/shop/conts/8021/6741/9934/11256/1_20150731182622_93.png" alt=""></a></div>
 								<p><a href="#">寿星专区</a></p>
 							</div>
 							<div class="huiyuantequan">
-								<div><a href="#"><img src="../img/1_20150731182724_9.png" alt=""></a></div>
+								<div><a href="#"><img src="http://cdnimg.ocj.com.cn/image_site/shop/conts/8021/6741/9934/11256/1_20150731182724_9.png" alt=""></a></div>
 								<p><a href="#">欧点乐园</a></p>
 							</div>
 							<div class="huiyuantequan">
-								<div><a href="#"><img src="../img/1_20150731182658_58.png" alt=""></a></div>
+								<div><a href="#"><img src="http://cdnimg.ocj.com.cn/image_site/shop/conts/8021/6741/9934/11256/1_20150731182658_58.png" alt=""></a></div>
 								<p><a href="#">更多权益</a></p>
 							</div>
 						</div>
@@ -1331,79 +1580,90 @@
 					<div class="tab">
 							<ul class="btntab clear">
 								<li class="active">
-									公告
-									<div class="bg_pic">
-										<img src="../img/yinying.png" alt="">
-									</div>
+									会员特权
+									<!-- <div class="bg_pic xianshi">
+										<img src="https://cdnimg.ocj.com.cn/common/webpc/image/imageindex/yinying.png" alt="">
+									</div> -->
 								</li>
-								<li>规则</li>
-								<li>论坛</li>
+								<li>
+									福利派
+									<!-- <div class="bg_pic">
+										<img src="https://cdnimg.ocj.com.cn/common/webpc/image/imageindex/yinying.png" alt="">
+									</div> -->
+								</li>
+								<li>
+									欧点乐园
+									<!-- <div class="bg_pic">
+										<img src="https://cdnimg.ocj.com.cn/common/webpc/image/imageindex/yinying.png" alt="">
+									</div> -->
+
+								</li>
 							</ul>
 							<div class="content">
-								<div class="show">
+								<div class="tabbox show">
 									<div>
-										<div class="pic"><a href="#"><img src="" alt=""></a></div>
-										<div class="jianjie"><a href="#">【会员专享】WOLL 德国制造蓝宝石炒锅特惠装</a></div>
+										<div class="pic"><a href="#"><img src="" alt="" class="huiyuan_pic"></a></div>
+										<div class="jianjie"><a href="#"></a></div>
 										<div class="xiaoshoujia">销售价：<span>￥1588</span></div>
-										<div class="huiyuanjia">会员价：<span class="price">￥1270元</span>起</div>
+										<div class="huiyuanjia">会员价：<span class="price"></span>元起</div>
 									</div>	
 									<div>
-										<div class="pic"><a href="#"><img src="" alt=""></a></div>
-										<div class="jianjie"><a href="#">【会员专享】WOLL 德国制造蓝宝石炒锅特惠装</a></div>
+										<div class="pic"><a href="#"><img src="" alt="" class="huiyuan_pic"></a></div>
+										<div class="jianjie"><a href="#"></a></div>
 										<div class="xiaoshoujia">销售价：<span>￥1588</span></div>
-										<div class="huiyuanjia">会员价：<span class="price">￥1270元</span>起</div>
+										<div class="huiyuanjia">会员价：<span class="price"></span>元起</div>
 									</div>	
 									<div>
-										<div class="pic"><a href="#"><img src="" alt=""></a></div>
-										<div class="jianjie"><a href="#">【会员专享】WOLL 德国制造蓝宝石炒锅特惠装</a></div>
+										<div class="pic"><a href="#"><img src="" alt="" class="huiyuan_pic"></a></div>
+										<div class="jianjie"><a href="#"></a></div>
 										<div class="xiaoshoujia">销售价：<span>￥1588</span></div>
-										<div class="huiyuanjia">会员价：<span class="price">￥1270元</span>起</div>
+										<div class="huiyuanjia">会员价：<span class="price"></span>元起</div>
 									</div>
 									<div>
-										<div class="pic"><a href="#"><img src="" alt=""></a></div>
-										<div class="jianjie"><a href="#">【会员专享】WOLL 德国制造蓝宝石炒锅特惠装</a></div>
+										<div class="pic"><a href="#"><img src="" alt="" class="huiyuan_pic"></a></div>
+										<div class="jianjie"><a href="#"></a></div>
 										<div class="xiaoshoujia">销售价：<span>￥1588</span></div>
-										<div class="huiyuanjia">会员价：<span class="price">￥1270元</span>起</div>
+										<div class="huiyuanjia">会员价：<span class="price"></span>元起</div>
 									</div>	   
 								</div>
-								<div>
+								<div class="tabbox boxtwo">
 									<div>
-										<div>大图</div>
-										<div>左上图</div>
-										<div>商品描述</div>
-										<div>价格</div>
-									</div>
+										<div class="pic"><a href="#"><img src="" alt="" class="huiyuan_pic"></a></div>
+										<div class="jianjie"><a href="#"></a></div>
+										<div class="xiaoshoujia">销售价：<span>￥1588</span></div>
+										<div class="huiyuanjia">会员价：<span class="price"></span>元起</div>
+									</div>	
 									<div>
-										<div>大图</div>
-										<div>左上图</div>
-										<div>商品描述</div>
-										<div>价格</div>
-									</div>
+										<div class="pic"><a href="#"><img src="" alt="" class="huiyuan_pic"></a></div>
+										<div class="jianjie"><a href="#"></a></div>
+										<div class="xiaoshoujia">销售价：<span>￥1588</span></div>
+										<div class="huiyuanjia">会员价：<span class="price"></span>元起</div>
+									</div>	
 								</div>
-								<div>
+								<div class="tabbox">
 									<div>
-										<div><a href="#"><img src="" alt=""></a></div>
-										<div><a href="#">【会员专享】WOLL 德国制造蓝宝石炒锅特惠装</a></div>
+										<div><a href="#"><img src="" alt="" class="huiyuan_pic"></a></div>
+										<div><a href="#"></a></div>
 										<div>销售价：<span>￥1588</span></div>
-										<div>会员价：<span class="price">￥1270元</span>起</div>
+										<div>兑换鸥点：<span class="price" ></span>鸥点</div>
 									</div>	
 									<div>
-										<div><a href="#"><img src="" alt=""></a></div>
-										<div><a href="#">【会员专享】WOLL 德国制造蓝宝石炒锅特惠装</a></div>
+										<div><a href="#"><img src="" alt="" class="huiyuan_pic"></a></div>
+										<div><a href="#"></a></div>
 										<div>销售价：<span>￥1588</span></div>
-										<div>会员价：<span class="price">￥1270元</span>起</div>
+										<div>兑换鸥点：<span class="price" ></span>鸥点</div>
 									</div>	
 									<div>
-										<div><a href="#"><img src="" alt=""></a></div>
-										<div><a href="#">【会员专享】WOLL 德国制造蓝宝石炒锅特惠装</a></div>
+										<div><a href="#"><img src="" alt="" class="huiyuan_pic"></a></div>
+										<div><a href="#"></a></div>
 										<div>销售价：<span>￥1588</span></div>
-										<div>会员价：<span class="price">￥1270元</span>起</div>
-									</div>	
+										<div>兑换鸥点：<span class="price" ></span>鸥点</div>
+									</div>
 									<div>
-										<div><a href="#"><img src="" alt=""></a></div>
-										<div><a href="#">【会员专享】WOLL 德国制造蓝宝石炒锅特惠装</a></div>
+										<div><a href="#"><img src="" alt="" class="huiyuan_pic"></a></div>
+										<div><a href="#"></a></div>
 										<div>销售价：<span>￥1588</span></div>
-										<div>会员价：<span class="price">￥1270元</span>起</div>
+										<div>兑换鸥点：<span class="price" ></span>鸥点</div>
 									</div>		
 								</div>					
 							</div>
@@ -1487,8 +1747,8 @@
 						</div>
 						<p class="more">更多</p>
 					</div>
-					<div class="notice_pic"><a href="#"><img src="../img/1_20150814190801_94.jpg" alt=""></a></div>
-					<div class="notice_pic"><a href="#"><img src="../img/1_20150814190832_60.jpg" alt=""></a></div>
+					<div class="notice_pic"><a href="#"><img src="https://www.ocj.com.cn/image_site/shop/conts/8021/6741/9939/11261/1_20150814190801_94.jpg" alt=""></a></div>
+					<div class="notice_pic"><a href="#"><img src="https://www.ocj.com.cn/image_site/shop/conts/8021/6741/9939/11261/1_20150814190832_60.jpg" alt=""></a></div>
 				</div>
 			</div>
 			<div class="foot_bot">
@@ -1496,5 +1756,45 @@
 			</div>
 		</div>
 	</div>
+
+
+	<!-- 楼梯效果 -->
+	<div class="loutinav">
+        <div>
+        	<div class="loutibanner">
+        		<div class="banner_pic">
+		    		<div><img src="https://cdnimg.ocj.com.cn/image_site/shop/conts/8021/6741/9940/11263/1_20180518173517_54.jpg" alt=""></div>
+		    		<div><img src="https://cdnimg.ocj.com.cn/image_site/shop/conts/8021/6741/9940/11263/1_20180523140509_75.jpg" alt=""></div>
+		    		<div><img src="https://cdnimg.ocj.com.cn/image_site/shop/conts/8021/6741/9940/11263/1_20180213170441_85.jpg" alt=""></div>
+		    		<div><img src="https://cdnimg.ocj.com.cn/image_site/shop/conts/8021/6741/9940/11263/1_20170411145122_63.jpg" alt=""></div>
+		    	</div>
+		    	<ul class="lt_circle_btn">
+		    		<li class="active"></li>
+					<li></li>
+					<li></li>
+					<li></li>
+		    	</ul>
+        	</div>
+        	<div class="loutibutton">
+        		<div class="active">食品饮料</div>
+        		<div>家居厨房</div>
+        		<div>3C家电</div>
+        		<div>时尚服饰</div>
+        	</div>
+        	<div class="service">
+        		<div class="kefu"><a href="#">东东客服</a></div>
+        		<div class="back_top">返回顶部</div>
+        	</div>
+        </div>
+    </div>
+	<!-- <script type="text/javascript" src="../script/lib/jquery.min.js"></script> -->
+
+	<!-- <script type="text/javascript" src="../script/js/index.js"></script> -->
+	 <!-- <script type="text/javascript" defer async="true" src="../script/js/lunbo.js"></script> -->
+	 <!-- <script type="text/javascript" src="../script/js/recommendbanner.js"></script> -->
+	 <!-- <script type="text/javascript" src="../script/js/groupbanner.js"></script> -->
+	 <!-- <script type="text/javascript" src="../script/js/foodbanner.js"></script> -->
+	 <!-- <script type="text/javascript" src="../script/js/tab.js"></script> -->
+	 <!-- <script type="text/javascript" src="../script/js/louti.js"></script> -->
 </body>
 </html>

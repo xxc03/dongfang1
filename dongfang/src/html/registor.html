@@ -20,16 +20,19 @@
 					<span>送货至:</span>
 				</div>
 				<div class="top-right right">
-					<div>
-						<span>图</span>
-						<a href="#">我的购物</a>
-						<span>图</span>
+					<div class="my_shop">
+						<div>	
+							<span>图</span>
+							<a href="#">我的购物</a>
+							<span>图</span>
+						</div>
 						<ul>
-							<li></li>
-							<li></li>
-							<li></li>
-							<li></li>
-							<li></li>
+							<li><a href="#"></a></li>
+							<li><a href="#">订单查询</a></li>
+							<li><a href="#">积分查询</a></li>
+							<li><a href="#">抵用券查询</a></li>
+							<li><a href="#">我的收藏</a></li>
+							<li><a href="#">修改信息</a></li>
 						</ul>
 					</div>
 					<div>
@@ -44,11 +47,15 @@
 						<span>图</span>
 						<a href="#">TV版</a>						
 					</div>
-					<div>
-						<span>图</span>
-						<a href="#">微信</a>	
+					<div class="weixin">
 						<div>
-											
+							<span>图</span>
+							<a href="#">微信</a>	
+						</div>
+						<span class="bg_box"></span>
+						<div class="weixin_erweima">
+							<p>扫一扫二维码,关注我们</p>
+							<img src="https://cdnimg.ocj.com.cn/image_site/shop/conts/8021/6741/9905/11128/1_20170904091940_98.jpg" alt="微信二维码">			
 						</div>				
 					</div>
 				</div>
@@ -92,7 +99,7 @@
 					</div>
 				</div>
 				<div class='left'>
-					<a href="#"><img src="../img/1_20180531172831_68.jpg" alt=""></a>	
+					<a href="#"><img src="https://cdnimg.ocj.com.cn/image_site/shop/conts/8021/6741/9941/11267/1_20180518104258_51.jpg" alt=""></a>	
 				</div>
 			</div>
 		</div>
@@ -112,42 +119,45 @@
 						<h3 class="left">手机注册</h3>
 						<span class="left">（推荐）</span>
 					</div>
-					<form action="php/reg.php" method="post" >
+					<form action="../../php/reg.php" method="post" >
 						<p>
 							<label>
-								手机号码：<input type="text" name="username" id='username' placeholder="请输入您的手机号码">
+								手机号码：<input type="text" name="username" id='username' placeholder="请输入您的手机号码" autocomplete="off">
 							</label>
 							<br/>
 							<span></span>
 						</p>
 						<p>
 							<label>
-								登录密码：<input type="password" name="password" id='password' >
+								登录密码：<input type="password" name="password" id='password' autocomplete="off">
 							</label>
 							<br/>
 							<span></span>
 						</p>
 						<p>
 							<label>
-								确认密码：<input type="password" name="repass" id='repass'>
+								确认密码：<input type="password" name="repass" id='repass' autocomplete="off"> 
 							</label>
 							<br/>
 							<span>请再次输入密码</span>
 						</p>
 						<p>
 							<label>
-								　验证码：<input type="text" name="yzm" id='yzm' placeholder="请输入验证码">
+								　验证码：<input type="text" name="yzm" id='yzm' placeholder="请输入验证码" autocomplete="off">
 							</label>
-							<i ><strong class="randnum"></strong><a href="#" class="aclick">换一张</a></i>
+							<i > 
+								<strong class="randnum"></strong>
+								<a href="javascript:;" class="aclick">换一张</a>
+							</i>
 							<br/>
 							<span></span>
 						</p>
 						<p class="tiaokuan">
-							<input type="checkbox" name="" checked="checked">我已阅读并同意<a href="http://help.dangdang.com/details/page12">东方CJ网络服务使用条款</a>
+							<input type="checkbox" name="" checked="checked" autocomplete="off">我已阅读并同意<a href="http://help.dangdang.com/details/page12">东方CJ网络服务使用条款</a>
 
 						</p>
 						<p>
-							<input type="submit" name="submit" class="zhuce" value="立即注册">
+							<input type="submit" name="submit" class="zhuce" value="立即注册" >
 						</p>
 					</form>
 				</div>
@@ -241,5 +251,30 @@
 			</div>
 		</div>
 	</div>
+	<!-- 楼梯效果 -->
+	<div class="loutinav">
+        <div>
+        	<div class="loutibanner">
+        		<div class="banner_pic">
+		    		<div><img src="https://cdnimg.ocj.com.cn/image_site/shop/conts/8021/6741/9940/11263/1_20180518173517_54.jpg" alt=""></div>
+		    		<div><img src="https://cdnimg.ocj.com.cn/image_site/shop/conts/8021/6741/9940/11263/1_20180523140509_75.jpg" alt=""></div>
+		    		<div><img src="https://cdnimg.ocj.com.cn/image_site/shop/conts/8021/6741/9940/11263/1_20180213170441_85.jpg" alt=""></div>
+		    		<div><img src="https://cdnimg.ocj.com.cn/image_site/shop/conts/8021/6741/9940/11263/1_20170411145122_63.jpg" alt=""></div>
+		    	</div>
+		    	<ul class="lt_circle_btn">
+		    		<li class="active"></li>
+					<li></li>
+					<li></li>
+					<li></li>
+		    	</ul>
+        	</div>
+        	<div class="service">
+        		<div class="kefu"><a href="#">东东客服</a></div>
+        		<div class="back_top">返回顶部</div>
+        	</div>
+        </div>
+    </div>
+	<script type="text/javascript" src="../script/lib/jquery.min.js"></script>
+	<script type="text/javascript" src="../script/js/form.js"></script>
 </body>
 </html>

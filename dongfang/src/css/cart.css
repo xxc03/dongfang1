@@ -2,6 +2,9 @@
   width: 1190px;
   margin: 0 auto; }
 
+body {
+  background: #f6f6f7; }
+
 .left {
   float: left; }
 
@@ -29,6 +32,24 @@ a:hover {
   color: red;
   color: 15px; }
 
+@font-face {
+  font-family: 'iconfont';
+  src: url("../font/iconfont.eot");
+  /* IE9*/
+  src: url("../font/iconfont.eot?#iefix") format("embedded-opentype"), url("../font/iconfont.woff") format("woff"), url("../font/iconfont.ttf") format("truetype"), url("../font/iconfont.svg#iconfont") format("svg");
+  /* iOS 4.1- */ }
+
+.hiconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale; }
+
+.header {
+  background: #fff; }
+
 .header .top {
   width: 100%;
   height: 32px;
@@ -52,6 +73,81 @@ a:hover {
 
 .top-right div a {
   color: #333; }
+
+.top-right .my_shop {
+  position: relative; }
+
+.top-right > div div {
+  position: relative;
+  z-index: 335; }
+
+.top-right .my_shop ul {
+  position: absolute;
+  left: -5px;
+  top: 6px;
+  border: 1px solid #d9d9d9;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.12);
+  z-index: 22;
+  width: 102px;
+  height: 165px;
+  display: none;
+  overflow: hidden; }
+
+.top-right .my_shop li a {
+  display: block;
+  height: 25px;
+  line-height: 25px;
+  width: 100%;
+  text-align: center;
+  color: #505966;
+  font-size: 12px; }
+
+.top-right .my_shop:hover ul {
+  display: block; }
+
+.top-right .weixin {
+  position: relative; }
+
+.top-right .weixin div span img {
+  vertical-align: middle; }
+
+.top-right .weixin .bg_box {
+  border: 1px solid #d9d9d9;
+  border-bottom: 0;
+  background-color: #fff;
+  display: block;
+  width: 56px;
+  height: 21px;
+  position: absolute;
+  left: -6px;
+  top: 5px;
+  z-index: 334;
+  display: none; }
+
+.top-right .weixin_erweima {
+  position: absolute;
+  right: -3px;
+  top: 26px;
+  border: 1px solid #d9d9d9;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.12);
+  z-index: 333;
+  width: 248px;
+  display: none; }
+
+.top-right .weixin_erweima p {
+  width: 100%;
+  text-align: center; }
+
+.top-right .weixin:hover .bg_box {
+  display: block; }
+
+.top-right .weixin:hover .weixin_erweima {
+  display: block; }
+
+.top-right .weixin_erweima img {
+  width: 100%; }
 
 .header .buttom {
   margin-top: 10px;
@@ -108,13 +204,34 @@ a:hover {
   float: right;
   margin-top: 5px; }
 
-.shop-cart {
+.shop-cart a {
+  display: block;
   padding-left: 17px;
   position: relative;
+  margin-top: 12px;
+  z-index: 3;
   width: 120px;
   height: 40px;
-  margin: 12px 17px 0 0;
-  background: red; }
+  line-height: 40px;
+  border: 1px solid #EFEFEF;
+  background-color: #F7F7F7;
+  cursor: pointer; }
+
+.shop-cart a img {
+  padding: 0 9px 0 2px;
+  vertical-align: middle; }
+
+.shop-cart .cart_num {
+  display: block;
+  width: 20px;
+  height: 20px;
+  line-height: 19px;
+  position: absolute;
+  top: -4px;
+  left: 33px;
+  background-image: url("https://cdnimg.ocj.com.cn/common/webpc/image/common/iconbgred.png");
+  color: #fff;
+  text-align: center; }
 
 .nav {
   width: 100%;
@@ -239,6 +356,9 @@ a:hover {
   margin-top: 30px;
   border-top: 3px solid #5c686e; }
 
+body {
+  background: #fff; }
+
 .header .logo {
   margin-right: 60px; }
 
@@ -281,7 +401,7 @@ a:hover {
 .cart_info {
   height: 44px;
   border: 1px solid #e1e4e6;
-  margin-top: 25px;
+  margin: 25px 0;
   font-size: 12px; }
 
 .cart_info .xiaotubiao {
@@ -331,13 +451,287 @@ a:hover {
   height: 113px;
   border: 1px solid #c6c9cc;
   background: #f7f7f7;
-  margin: 40px 0; }
+  margin: 40px 0;
+  display: block; }
 
 .cart_content .cart_logo {
   width: 80px;
   height: 56px;
   margin: 32px 0 0 390px;
   background: url("../img/bg.cart.main.png") no-repeat -141px -246px; }
+
+.has_commodity {
+  display: none; }
+
+.has_commodity .blue_line {
+  width: 100%;
+  height: 5px;
+  background: url("http://www.ocj.com.cn/common/theme/v1/images/cart/bg.cart.blue-line.gif") repeat-x; }
+
+.has_commodity .list {
+  height: 39px;
+  border-bottom: 1px solid #d7dfe5;
+  background: #f7f7f7;
+  font-size: 12px;
+  line-height: 39px;
+  color: #505966; }
+
+.has_commodity .hea_title span {
+  display: inline-block;
+  text-align: center; }
+
+.has_commodity .hea_title .shangpin {
+  text-align: center;
+  width: 423px; }
+
+.has_commodity .hea_title .jifen {
+  width: 102px; }
+
+.has_commodity .hea_title .danjia {
+  width: 165px; }
+
+.has_commodity .hea_title .zongshu {
+  width: 100px; }
+
+.has_commodity .hea_title .xiaoji {
+  width: 115px; }
+
+.has_commodity .hea_title .caozuo {
+  width: 147px; }
+
+.has_commodity .hea_title .yunfei {
+  width: 116px; }
+
+.has_commodity .cangku {
+  width: 100%;
+  border: 1px solid #686868; }
+
+.has_commodity .commodity_list {
+  width: 100%; }
+
+.list_header {
+  width: 100%;
+  height: 40px; }
+
+.list_header .empty_box {
+  width: 1072px;
+  height: 40px;
+  border-right: 1px solid #d9d9db; }
+
+.commodity_box {
+  width: 1072px;
+  padding: 20px 0;
+  border-top: 1px solid #d9d9db;
+  border-right: 1px solid #d9d9db;
+  display: none; }
+
+.commodity_box > div {
+  float: left; }
+
+.commodity_box .cols1 {
+  width: 443px; }
+
+.choose_btn input {
+  margin: 24px 0 0 13px; }
+
+.commodity_box .cols1 .pic {
+  margin-left: 18px; }
+
+.commodity_box .cols1 .pic img {
+  vertical-align: middle;
+  width: 60px; }
+
+.commodity_box .commodity_xinxi {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  color: #666b7e;
+  margin-left: 12px;
+  width: 204px;
+  height: 60px;
+  position: relative; }
+
+.commodity_box .commodity_xinxi .commodity_name a {
+  display: block;
+  line-height: 17px;
+  height: 17px;
+  margin-top: 3px;
+  overflow: hidden; }
+
+.commodity_box .commodity_xinxi .commodity_type {
+  margin-top: 5px;
+  color: #84878c; }
+
+.commodity_box .cols2 {
+  width: 93px;
+  text-align: center; }
+
+.commodity_box .cols2 .credits {
+  display: block;
+  margin: 25px 0 6px 10px;
+  float: left;
+  padding-left: 16px;
+  background: url("http://www.ocj.com.cn/common/theme/v1/images/bg.icon.2.1.gif") no-repeat;
+  line-height: 12px;
+  font-size: 12px; }
+
+.commodity_box .cols3 {
+  width: 165px;
+  height: 40px;
+  position: relative; }
+
+.commodity_box .cols3 .unit_price {
+  position: absolute;
+  top: 22px;
+  display: block;
+  width: 100%;
+  color: #505968;
+  text-align: center;
+  font-size: 15px; }
+
+.commodity_box .cols4 {
+  width: 100px; }
+
+.commodity_box .cols4 p {
+  width: 70px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  float: left;
+  border: 0;
+  margin: 15px 0 0 19px; }
+
+.commodity_box .cols4 p b {
+  display: inline-block;
+  font-weight: 300;
+  width: 28px;
+  height: 25px;
+  float: left;
+  background: url("../img/bg.cart.main.png") no-repeat -84px -326px; }
+
+.commodity_box .cols4 p span, .commodity_box .cols4 em {
+  display: inline-block;
+  width: 21px;
+  height: 25px;
+  cursor: pointer;
+  float: left; }
+
+.commodity_box .cols4 p span {
+  background: url("../img/bg.cart.main.png") no-repeat 0px -326px; }
+
+.commodity_box .cols4 p em {
+  background: url("../img/bg.cart.main.png") no-repeat -42px -326px; }
+
+.commodity_box .cols5 {
+  width: 115px;
+  text-align: center; }
+
+.commodity_box .cols5 .total_prices {
+  color: #ED0505;
+  display: block;
+  margin-top: 22px; }
+
+.commodity_box .cols6 {
+  width: 147px; }
+
+.commodity_box .cols6 .btn_info {
+  position: relative;
+  margin-left: 24px;
+  margin-right: 0; }
+
+.commodity_box .cols6 .btn_info .buy_btn .buy {
+  display: block;
+  width: 81px;
+  height: 33px;
+  background: url("../img/bg.cart.main.png") no-repeat 0 -355px;
+  margin: 5px 0 0 11px;
+  cursor: pointer; }
+
+.commodity_box .cols6 .btn_info .del_btn {
+  margin-top: 5px;
+  padding-left: 12px;
+  font-size: 13px; }
+
+.commodity_box .cols6 .btn_info .del_btn .del {
+  float: left;
+  padding-left: 18px;
+  cursor: pointer;
+  color: #7D8289;
+  background: url("../img/bg.cart.icons.png") no-repeat 0 -23px; }
+
+.go_buy {
+  margin-top: 10px; }
+
+.go_buy a {
+  display: block;
+  width: 101px;
+  height: 33px;
+  float: left;
+  background: url("../img/bg.cart.main.png") no-repeat -168px -354px; }
+
+.jiesuan {
+  margin: 10px auto 0;
+  background: #f9f9f9;
+  width: 1188px;
+  height: 68px;
+  border: 1px solid #d7dfe5;
+  border-bottom-color: #9caebb;
+  font-size: 12px;
+  color: #505966; }
+
+.jiesuan .check_all {
+  height: 68px;
+  line-height: 68px;
+  font-size: 13px; }
+
+.jiesuan .check_all span {
+  height: 68px;
+  display: inline-block;
+  margin-left: 30px; }
+
+.jiesuan .check_all span a {
+  font-size: 12px;
+  color: #505966; }
+
+.check_all .checkall_btn {
+  margin-left: 12px;
+  vertical-align: middle;
+  margin-right: 5px; }
+
+.jiezhang {
+  height: 68px; }
+
+.total_price {
+  float: left;
+  height: 68px;
+  width: 347px;
+  color: #505966; }
+
+.total_price p {
+  margin-top: 21px; }
+
+.total_price .freight {
+  display: inline-block;
+  margin-right: 30px; }
+
+.total_price div {
+  padding-top: 10px;
+  color: #f10000; }
+
+.total_price div .freight_num {
+  display: inline-block;
+  width: 128px;
+  text-align: center;
+  margin-right: 40px; }
+
+.go_account {
+  position: relative;
+  height: 43px;
+  width: 151px;
+  float: right;
+  background: url("../img/bg.cart.main.png") no-repeat -212px -179px;
+  cursor: pointer;
+  margin: 14px 13px 0 0; }
 
 .commodity_info {
   margin: 0;

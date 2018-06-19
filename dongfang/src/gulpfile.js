@@ -73,4 +73,5 @@ gulp.task('imagemin',function(){
 	.pipe(gulp.dest('../dist/img'));
 });
 //执行任务
-gulp.task('default',["watchhtml",'watchsass','watchcss','connect','connectwatch','imagemin'])
+// gulp.task('default',["watchhtml",'watchsass','watchcss','connect','connectwatch','imagemin'])
+ gulp.task('default',["watchhtml",'watchsass','watchcss'])

@@ -20,35 +20,42 @@
 					<span>送货至:</span>
 				</div>
 				<div class="top-right right">
-					<div>
-						<span>图</span>
-						<a href="#">我的购物</a>
-						<span>图</span>
+					<div class="my_shop">
+						<div>	
+							<span class="hiconfont"></span>
+							<a href="#">我的购物</a>
+							<span class="icon-arr icon-arrow-down8"></span>
+						</div>
 						<ul>
-							<li></li>
-							<li></li>
-							<li></li>
-							<li></li>
-							<li></li>
+							<li><a href="#"></a></li>
+							<li><a href="#">订单查询</a></li>
+							<li><a href="#">积分查询</a></li>
+							<li><a href="#">抵用券查询</a></li>
+							<li><a href="#">我的收藏</a></li>
+							<li><a href="#">修改信息</a></li>
 						</ul>
 					</div>
 					<div>
-						<span>图</span>
+						<span class="hiconfont"></span>
 						<a href="#">顾客中心</a>				
 					</div>
 					<div>
-						<span>图</span>
+						<span class="hiconfont"></span>
 						<a href="#">移动版</a>					
 					</div>
 					<div>
-						<span>图</span>
+						<span class="hiconfont"></span>
 						<a href="#">TV版</a>						
 					</div>
-					<div>
-						<span>图</span>
-						<a href="#">微信</a>	
+					<div class="weixin">
 						<div>
-											
+							<span><img src="http://www.ocj.com.cn/common/webpc/image/common/topimg5.png" alt=""></span>
+							<a href="#">微信</a>	
+						</div>
+						<span class="bg_box"></span>
+						<div class="weixin_erweima">
+							<p>扫一扫二维码,关注我们</p>
+							<img src="https://cdnimg.ocj.com.cn/image_site/shop/conts/8021/6741/9905/11128/1_20170904091940_98.jpg" alt="微信二维码">			
 						</div>				
 					</div>
 				</div>
@@ -92,7 +99,7 @@
 					</div>
 				</div>
 				<div class='left'>
-					<a href="#"><img src="../img/1_20180531172831_68.jpg" alt=""></a>	
+					<a href="#"><img src="https://cdnimg.ocj.com.cn/image_site/shop/conts/8021/6741/9941/11267/1_20180518104258_51.jpg" alt=""></a>	
 				</div>
 			</div>
 		</div>
@@ -136,13 +143,105 @@
 					</li>
 				</ul>
 			</div>
-			<div class="cart_content clear">
-				<div class="cart_logo left"></div>
-				<div class="commodity_info left">
-					购物车内一件商品都没有，您可以去
-					<a href="index.html">首页</a>挑选喜欢的商品
+			<div class="cart_main">
+				
+				<div class="cart_content clear">
+					<div class="cart_logo left"></div>
+					<div class="commodity_info left">
+						购物车内一件商品都没有，您可以去
+						<a href="index.html">首页</a>挑选喜欢的商品
+					</div>
+				</div>
+				<div class="has_commodity" >
+					<div class="hea_title">
+						<div class="blue_line"></div>
+						<div class="list">
+							<span class="shangpin">商品</span>
+							<span class="jifen">积分</span>
+							<span class="danjia">单价</span>
+							<span class="zongshu">数量</span>
+							<span class="xiaoji">小计</span>
+							<span class="caozuo">操作</span>
+							<span class="yunfei">运费</span>
+						</div>
+					</div>
+					<div class="cangku clear">
+						<div class="commodity_list clear">
+							<div class="list_header clear">
+								<div class="empty_box left"></div>
+							</div>
+							<div class="commodity_box clear ">
+								<div class="cols1">
+									<div class="choose_btn left">
+										<input type="checkbox" name="cart_select" >
+									</div>
+									<div class="pic left">
+										<a href="javascript:;"><img src="" alt=""></a>
+									</div>
+									<div class="commodity_xinxi left">
+										<p class="commodity_name lef"><a href="javascript:;">TV商品 慕典 定制成品窗帘</a></p>
+										<p class="commodity_type">颜色/种类:<em>无</em></p>
+									</div>
+								</div>
+								<div class="cols2">
+									<span class="credits">50.4</span>
+								</div>
+								<div class="cols3">
+									<span class="unit_price">￥<i></i></span>
+								</div>
+								<div class="cols4">
+									<p>
+				    					<span class="reduce"></span>
+				    					<b class="shuliang"></b>
+				    					<em class="add"></em>
+				    				</p>
+								</div>
+								<div class="cols5">
+									<span class="total_prices">￥<i></i></span>
+								</div>
+								<div class="cols6">
+									<div class="btn_info">
+										<div class="buy_btn">
+											<span class="buy"></span>
+										</div>
+										<div class="del_btn clear">
+											<span class="del">删除</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="go_buy clear">
+						<a href="index.html"></a>
+					</div>
+					<div class="jiesuan">
+						<div class="check_all left">
+							<label><input type="checkbox" name="checkall" class="checkall_btn">全选</label>
+							<span class="delete_together"><a href="javascript:;">批量删除</a></span>
+							<span class="favorite"><a href="javascript:;">批量加入收藏夹</a></span>
+							<span class="empty_cart "><a href="javascript:;">清空购物车</a></span>
+						</div>
+						<div class="jiezhang right">
+							<div class="total_price">
+								<p>
+									<span class="freight">运费(以确认订单页为准)</span>
+									<span class="commodity_num_price"><b>1</b>件商品总价</span>
+								</p>
+								<div>
+									<span class="freight_num">0</span>
+									<span class="price_num">￥1680</span>
+								</div>
+							</div>
+							<div class="go_account"></div>
+						</div>
+					</div>
 				</div>
 			</div>
+
+
+
 			<div class="cart_main_bot">
 				<div class="recent_browse">
 					<div><a href="#">为您推荐</a></div>
@@ -150,45 +249,45 @@
 				</div>
 				<div class="cart_commodity_list">
 					<div class="commodity">
-						<a href="#"><img src="../img/15167846L.jpg" alt=""></a>
+						<a href="#"><img src="https://cdnimg.ocj.com.cn/item_images/item/15/17/2167/15172167-L.jpg" alt=""></a>
 						<div class="shop_info">
-							<p><a href="#">[商城]豪雄 黄冰糖454gx4袋</a></p>
+							<p><a href="#">融氏 纯玉米胚芽油超值特惠组</a></p>
 							<span class="price">￥88</span>
 						</div>			
 					</div>
 					<div class="commodity">
-						<a href="#"><img src="../img/15167846L.jpg" alt=""></a>
+						<a href="#"><img src="https://cdnimg.ocj.com.cn/item_images/item/15/20/9204/15209204L.jpg" alt=""></a>
 						<div class="shop_info">
-							<p><a href="#">[商城]豪雄 黄冰糖454gx4袋</a></p>
-							<span class="price">￥88</span>
+							<p><a href="#">暇步士(Hush Puppies) 男士简约休闲裤2件组</a></p>
+							<span class="price">￥ 398.0</span>
 						</div>
 					</div>
 					<div class="commodity">
-						<a href="#"><img src="../img/15167846L.jpg" alt=""></a>
+						<a href="#"><img src="https://cdnimg.ocj.com.cn/item_images/item/15/14/2219/15142219-L.jpg" alt=""></a>
 						<div class="shop_info">
-							<p><a href="#">[商城]豪雄 黄冰糖454gx4袋</a></p>
-							<span class="price">￥88</span>
+							<p><a href="#">石库门 上海老酒5年陈红标【合家欢乐装】</a></p>
+							<span class="price">￥ 218.0</span>
 						</div>
 					</div>
 					<div class="commodity">
-						<a href="#"><img src="../img/15167846L.jpg" alt=""></a>
+						<a href="#"><img src="https://cdnimg.ocj.com.cn/item_images/item/15/09/1349/15091349-L.jpg" alt=""></a>
 						<div class="shop_info">
-							<p><a href="#">[商城]豪雄 黄冰糖454gx4袋</a></p>
-							<span class="price">￥88</span>
+							<p><a href="#">富培美 水精灵8+8+6超值回馈</a></p>
+							<span class="price">￥ 99.0</span>
 						</div>			
 					</div>
 					<div class="commodity">
-						<a href="#"><img src="../img/15167846L.jpg" alt=""></a>
+						<a href="#"><img src="https://cdnimg.ocj.com.cn/item_images/item/15/13/8480/15138480-L.jpg" alt=""></a>
 						<div class="shop_info">
-							<p><a href="#">[商城]豪雄 黄冰糖454gx4袋</a></p>
-							<span class="price">￥88</span>
+							<p><a href="#">精选冷冻虾仁(南美白对虾）6+2超值组</a></p>
+							<span class="price">￥ 248.0</span>
 						</div>
 					</div>
 					<div class="commodity">
-						<a href="#"><img src="../img/15167846L.jpg" alt=""></a>
+						<a href="#"><img src="https://cdnimg.ocj.com.cn/item_images/item/15/16/1377/15161377-L.jpg" alt=""></a>
 						<div class="shop_info">
-							<p><a href="#">[商城]豪雄 黄冰糖454gx4袋</a></p>
-							<span class="price">￥88</span>
+							<p><a href="#">赛普瑞斯 双面煎不粘锅具套组</a></p>
+							<span class="price">￥ 599.0</span>
 						</div>
 					</div>
 				</div>
@@ -278,5 +377,8 @@
 			</div>
 		</div>
 	</div>
+	<script type="text/javascript" src="../script/lib/jquery.min.js"></script>
+	<script type="text/javascript" src="../script/lib/jquery.cookie.js"></script>
+	<script type="text/javascript" src="../script/js/cart.js"></script>
 </body>
 </html>

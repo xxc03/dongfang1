@@ -2,6 +2,9 @@
   width: 1190px;
   margin: 0 auto; }
 
+body {
+  background: #f6f6f7; }
+
 .left {
   float: left; }
 
@@ -29,6 +32,24 @@ a:hover {
   color: red;
   color: 15px; }
 
+@font-face {
+  font-family: 'iconfont';
+  src: url("../font/iconfont.eot");
+  /* IE9*/
+  src: url("../font/iconfont.eot?#iefix") format("embedded-opentype"), url("../font/iconfont.woff") format("woff"), url("../font/iconfont.ttf") format("truetype"), url("../font/iconfont.svg#iconfont") format("svg");
+  /* iOS 4.1- */ }
+
+.hiconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale; }
+
+.header {
+  background: #fff; }
+
 .header .top {
   width: 100%;
   height: 32px;
@@ -52,6 +73,81 @@ a:hover {
 
 .top-right div a {
   color: #333; }
+
+.top-right .my_shop {
+  position: relative; }
+
+.top-right > div div {
+  position: relative;
+  z-index: 335; }
+
+.top-right .my_shop ul {
+  position: absolute;
+  left: -5px;
+  top: 6px;
+  border: 1px solid #d9d9d9;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.12);
+  z-index: 22;
+  width: 102px;
+  height: 165px;
+  display: none;
+  overflow: hidden; }
+
+.top-right .my_shop li a {
+  display: block;
+  height: 25px;
+  line-height: 25px;
+  width: 100%;
+  text-align: center;
+  color: #505966;
+  font-size: 12px; }
+
+.top-right .my_shop:hover ul {
+  display: block; }
+
+.top-right .weixin {
+  position: relative; }
+
+.top-right .weixin div span img {
+  vertical-align: middle; }
+
+.top-right .weixin .bg_box {
+  border: 1px solid #d9d9d9;
+  border-bottom: 0;
+  background-color: #fff;
+  display: block;
+  width: 56px;
+  height: 21px;
+  position: absolute;
+  left: -6px;
+  top: 5px;
+  z-index: 334;
+  display: none; }
+
+.top-right .weixin_erweima {
+  position: absolute;
+  right: -3px;
+  top: 26px;
+  border: 1px solid #d9d9d9;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.12);
+  z-index: 333;
+  width: 248px;
+  display: none; }
+
+.top-right .weixin_erweima p {
+  width: 100%;
+  text-align: center; }
+
+.top-right .weixin:hover .bg_box {
+  display: block; }
+
+.top-right .weixin:hover .weixin_erweima {
+  display: block; }
+
+.top-right .weixin_erweima img {
+  width: 100%; }
 
 .header .buttom {
   margin-top: 10px;
@@ -108,13 +204,34 @@ a:hover {
   float: right;
   margin-top: 5px; }
 
-.shop-cart {
+.shop-cart a {
+  display: block;
   padding-left: 17px;
   position: relative;
+  margin-top: 12px;
+  z-index: 3;
   width: 120px;
   height: 40px;
-  margin: 12px 17px 0 0;
-  background: red; }
+  line-height: 40px;
+  border: 1px solid #EFEFEF;
+  background-color: #F7F7F7;
+  cursor: pointer; }
+
+.shop-cart a img {
+  padding: 0 9px 0 2px;
+  vertical-align: middle; }
+
+.shop-cart .cart_num {
+  display: block;
+  width: 20px;
+  height: 20px;
+  line-height: 19px;
+  position: absolute;
+  top: -4px;
+  left: 33px;
+  background-image: url("https://cdnimg.ocj.com.cn/common/webpc/image/common/iconbgred.png");
+  color: #fff;
+  text-align: center; }
 
 .nav {
   width: 100%;
@@ -238,6 +355,96 @@ a:hover {
 .foot_bot {
   margin-top: 30px;
   border-top: 3px solid #5c686e; }
+
+.loutinav {
+  width: 84px;
+  position: fixed;
+  bottom: 10px;
+  right: 51%;
+  margin-right: -690px;
+  z-index: 666; }
+
+.loutibanner {
+  position: relative;
+  width: 80px;
+  height: 130px;
+  overflow: hidden;
+  background-color: #ffffff; }
+
+.loutibanner .banner_pic {
+  width: 80px;
+  height: 110px;
+  position: relative; }
+
+.loutibanner .banner_pic div {
+  position: absolute;
+  left: 0;
+  top: 0; }
+
+.loutibanner .lt_circle_btn {
+  position: absolute;
+  bottom: 2%;
+  width: 100%;
+  text-align: center;
+  z-index: 9999; }
+
+.loutibanner .lt_circle_btn li {
+  position: relative;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 2px;
+  padding: 0;
+  cursor: pointer;
+  border-radius: 20px;
+  overflow: hidden;
+  background: url("../img/q.png"); }
+
+.loutibanner .lt_circle_btn .active {
+  background: url("../img/qf.png"); }
+
+.loutibutton {
+  margin-top: 11px;
+  width: 84px;
+  display: none; }
+
+.loutibutton div {
+  width: 100%;
+  background-color: #ffffff;
+  height: 26px;
+  line-height: 26px;
+  text-align: center;
+  color: #3c3c3c;
+  cursor: pointer;
+  font-size: 12px; }
+
+.service {
+  width: 84px;
+  height: auto;
+  margin-bottom: 10px; }
+
+.service .kefu {
+  border-top: 1px dotted #d3d3d3;
+  width: 100%;
+  height: 22px;
+  padding-top: 55px;
+  text-align: center;
+  background: #fff url("../img/bg.site.nav.png") 16px -539px no-repeat; }
+
+.back_top {
+  width: 84px;
+  height: 30px;
+  background: #4b4c50 url("../img/bg.site.nav.png") -1px -604px no-repeat;
+  color: #fff;
+  font-weight: bold;
+  text-indent: 23px;
+  line-height: 30px;
+  cursor: pointer;
+  font-size: 12px; }
+
+.loutibutton .active {
+  background-color: #fb4255;
+  color: #fff; }
 
 .header .logo {
   margin-right: 60px; }

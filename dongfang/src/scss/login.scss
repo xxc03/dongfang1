@@ -24,7 +24,7 @@
 .search .search_bar input{
 	width:463px;
 }
-.search .hotbot ul{
+.search .hotbot ol{
 	float:left;
 	margin-right:30px;
 }
@@ -32,20 +32,31 @@
 	width: 870px;
     padding: 50px 0 70px 0;
 }
- .banner{
+ .login_banner{
 	width:450px;
+	height:300px;
 	position:$po-relative;
 }
- .banner img{
+ .login_banner div{
+ 	position:$po-absolute;
+ 	left:0;
+ 	top:0;
+ 	opacity:0;
+ }
+  .login_banner div:nth-of-type(1){
+  	opacity:1;
+  }
+ .login_banner img{
 	width:450px;
 }
-.banner ul{
+.login_banner ol{
 	@extend %circle-btn;
+	opacity:1;
 }
- .banner>div:hover{
+ .login_banner>div:hover{
 	width:73px;
 }
-.banner ul li:hover{
+.login_banner ol .active{
 	background:url("../img/qf.png");
 }
 .login_box{
@@ -63,9 +74,13 @@
 	width:309px;
 }
 .login_box h4{
-	    width: 270px;
+	width: 270px;
     padding-bottom: 4px;
 } 
+.login_box .username h4{
+	float:left;
+	width:70px;
+}
 .same_style{
 	height: 20px;
     line-height: 20px;
@@ -92,8 +107,10 @@
 }
 .yzm input{
 	width: 78px;
+	height:23px;
     padding-left: 10px;
     padding-right: 20px;
+    margin:0;
 }
 .yzm i{
 	display:inline-block;
@@ -101,18 +118,23 @@
 	left:397px;
 	font-style: normal;
 }
-.yzm div{
+.yzm .xianshi{
 	width:198px;
 }
 .yzm .randnum{
 	display:inline-block;
 	width: 100px;
-	height: 42px;
-	line-height: 42px;
+	height: 38px;
+	line-height: 38px;
 	text-align: center;
+	background: #deb887;
 	font-size: 24px;
 	color: #b22222;
 	cursor: pointer;
+}
+.yzm p{
+	width:270px;
+	height:30px;
 }
 .yzm .aclick{
 	display:inline-block;

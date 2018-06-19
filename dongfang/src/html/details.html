@@ -14,41 +14,55 @@
 		<div class='top'>
 			<div class="wrapper">
 				<div class="top-left">
-					<span calss="top-welcome">欢迎光临 OCJ.COM.CN</span>
-					<span><a href="login.html">登录</a></span>
-					<span><a href="registor.html">注册</a></span>
-					<span>送货至:</span>
+					<div class="login left" >
+				        <span calss="top-welcome">欢迎光临 OCJ.COM.CN</span>
+				        <span><a href="login.html">登录</a></span>
+				        <span><a href="registor.html">注册</a></span>
+				        <span>送货至:</span>
+				    </div>
+				    <div class="admin"  style="display: none;">
+				        <span class="nicheng"></span>
+				        <span><a href="javascript:;">退出</a></span>
+				        <span>送货至:</span>
+				    </div>				
 				</div>
 				<div class="top-right right">
-					<div>
-						<span>图</span>
-						<a href="#">我的购物</a>
-						<span>图</span>
+					<div class="my_shop">
+						<div>	
+							<span class="hiconfont"></span>
+							<a href="#">我的购物</a>
+							<span class="icon-arr icon-arrow-down8"></span>
+						</div>
 						<ul>
-							<li></li>
-							<li></li>
-							<li></li>
-							<li></li>
-							<li></li>
+							<li><a href="#"></a></li>
+							<li><a href="#">订单查询</a></li>
+							<li><a href="#">积分查询</a></li>
+							<li><a href="#">抵用券查询</a></li>
+							<li><a href="#">我的收藏</a></li>
+							<li><a href="#">修改信息</a></li>
 						</ul>
 					</div>
 					<div>
-						<span>图</span>
+						<span class="hiconfont"></span>
 						<a href="#">顾客中心</a>				
 					</div>
 					<div>
-						<span>图</span>
+						<span class="hiconfont"></span>
 						<a href="#">移动版</a>					
 					</div>
 					<div>
-						<span>图</span>
+						<span class="hiconfont"></span>
 						<a href="#">TV版</a>						
 					</div>
-					<div>
-						<span>图</span>
-						<a href="#">微信</a>	
+					<div class="weixin">
 						<div>
-											
+							<span><img src="http://www.ocj.com.cn/common/webpc/image/common/topimg5.png" alt=""></span>
+							<a href="#">微信</a>	
+						</div>
+						<span class="bg_box"></span>
+						<div class="weixin_erweima">
+							<p>扫一扫二维码,关注我们</p>
+							<img src="https://cdnimg.ocj.com.cn/image_site/shop/conts/8021/6741/9905/11128/1_20170904091940_98.jpg" alt="微信二维码">			
 						</div>				
 					</div>
 				</div>
@@ -57,9 +71,9 @@
 		<div class="buttom">		
 			<div class="wrapper">
 				<h1 class="logo left">
-					<a href="index.html"><img src="../img/cplogo0.png" alt="东方购物"></a>
+					<a href="index.html"><img src="https://cdnimg.ocj.com.cn/common/webpc/image/tiplogo/cplogo0.png"></a>
 				</h1>	
-				<a href="#" class="left"><img src="../img/1_20180511180615_9.jpg" ></a>
+				<a href="#" class="left"><img src="https://www.ocj.com.cn/image_site/shop/conts/8021/6741/9903/11464/1_20180511180615_9.jpg" ></a>
 				<div class="search left">
 					<div class="search_bar">
 						<form action="" method="get">
@@ -90,10 +104,14 @@
 					</div>
 				</div>
 				<div class="shop-cart left">
-					
+					<a href="cart.html">
+						<span class="cart_num"></span>
+						<img src="../img/cart.png" alt="">
+						购物车
+					</a>
 				</div>
 				<div class='left'>
-					<a href="#"><img src="../img/1_20180531172831_68.jpg" alt=""></a>	
+					<a href="#"><img src="https://cdnimg.ocj.com.cn/image_site/shop/conts/8021/6741/9941/11267/1_20180518104258_51.jpg" alt=""></a>	
 				</div>
 			</div>
 		</div>
@@ -188,25 +206,32 @@
 					<h2>
 						<span class="tubiao"></span>
 						玥之秘水晶防晒喷雾2+1 
-					</h2>
+					</h2> 
 				</div>
 			<div class="particulars_info">
 					<div class="particulars_info_left left">
-				        <div class="spic">
-				            <img src="../img/15175302L.jpg" alt="">
+				        <div class="spic shuju" sid=''>
+				            <img src="" alt="">
 				            <div class="sf"></div>
 				        </div>
-				        <div class="bf">
-				            <img src="../img/15232349-L.jpg" alt="" class="bpic">
+				        <div class="bf shuju">
+				            <img src="" alt="" class="bpic">
 				        </div>
 			            <div class="piclist clear">
-			                <ul>
-			                    <li><img src="../img/15175302P.jpg" alt=""></li>
-			                    <li><img src="../img/15175302P3.jpg" alt=""></li>
-			                     <li><img src="../img/15175302P.jpg" alt=""></li>
-			                    <li><img src="../img/15175302P3.jpg" alt=""></li>
-			                    <li><img src="../img/15175302P3.jpg" alt=""></li>
-			                </ul>
+			            	<span class="left_btn"></span>
+			            	<div class="picbox clear">
+			            		
+				                <ul class="ulist">
+				                    <li><img src="" alt=""></li>
+				                    <li><img src="" alt=""></li>
+				                     <li><img src="" alt=""></li>
+				                    <li><img src="" alt=""></li>
+				                    <li><img src="" alt=""></li>
+				                    <li><img src="" alt=""></li>
+				                    <li><img src="" alt=""></li>
+				                </ul>
+			            	</div>
+			                <span class="right_btn"></span>
 			            </div>  
 			            <div class="line">
 			            	<div class="view_image">查看图片</div>
@@ -216,14 +241,14 @@
 			    		<dl class="serial_number clear">
 			    			<dt class="left">商品编号</dt>
 			    			<dd class="left">
-			    				<span>1523-2349</span>
+			    				<span>1522-1699</span>
 			    				<a href="#" class="right">计算器</a>
 			    			</dd>
 			    		</dl>
 			    		<dl class="commodity_prices clear">
 			    			<dt class="left">商品价格</dt>
 			    			<dd class="left">
-			    				<span class="price">￥298</span>
+			    				<span class="price">￥1,680</span>
 			    			</dd>
 			    		</dl>
 			    		<dl class="jifen xiangxi clear">
@@ -238,25 +263,33 @@
 			    		<dl class="complimentary xiangxi clear">
 			    			<dt class="left">赠　　品</dt>
 			    			<dd class="left">
-			    					<b>韩束亚麻籽幻能多效原液4ml*10支 ...</b>
+			    					<b>慕典 高端定制窗帘 订金 ...</b>
 			    					<a href="#"></a>
 			    			</dd>
 			    		</dl>
 			    		<dl class="peisong clear">
-			    			<dt class="left">赠　　品</dt>
+			    			<dt class="left">配　　送</dt>
 			    			<dd class="left">
-			    				<dl>
-									<dt>上海</dt>
+			    				<dl >
+									<dt class="dizhi">上海</dt>
 								</dl>
+								<ul class="peisong_sub">
+									<li><a href="#">北京</a></li>
+									<li><a href="#">天津</a></li>
+									<li><a href="#">浙江</a></li>
+									<li><a href="#">福建</a></li>
+									<li><a href="#">广州</a></li>
+									<li><a href="#">深圳</a></li>
+								</ul>
 			    			</dd>
 			    		</dl>
 			    		<dl class="number clear">
 			    			<dt class="left">数　　量</dt>
 			    			<dd class="left">
 			    				<p>
-			    					<span></span>
-			    					<b>1</b>
-			    					<em></em>
+			    					<span class="reduce"></span>
+			    					<b class="shuliang">1</b>
+			    					<em class="add"></em>
 			    				</p>
 			    			</dd>
 			    		</dl>
@@ -265,7 +298,8 @@
 			    			<span class="add_cart">加入购物车</span>
 			    			<span class="erweima right">
 			    				<a href="#" class="left">APP首购最高减200元（以下单为准）</a>
-								<img src="../img/15232349A.jpg" alt="" class="right">
+								<img src="http://image1.ocj.com.cn/item_images/upload/064083/15223959A.jpg" alt="" class="sma_erweima right">
+								<img src="http://image1.ocj.com.cn/item_images/upload/064100/15221699B.jpg" class="big_erweima">
 			    			</span>
 			    		</div>
 			    		<div class="shouhou">
@@ -362,5 +396,9 @@
 			</div>
 		</div>
 	</div>
+	<script type="text/javascript" src="../script/lib/jquery.min.js"></script>
+	<script type="text/javascript" src="../script/lib/jquery.cookie.js"></script>
+	<script type="text/javascript" src="../script/js/detailsDATA.js"></script>
+	<script type="text/javascript" src="../script//js/details.js"></script>
 </body>
 </html>

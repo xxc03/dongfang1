@@ -20,35 +20,42 @@
 					<span>送货至:</span>
 				</div>
 				<div class="top-right right">
-					<div>
-						<span>图</span>
-						<a href="#">我的购物</a>
-						<span>图</span>
+					<div class="my_shop">
+						<div>	
+							<span class="hiconfont"></span>
+							<a href="#">我的购物</a>
+							<span class="icon-arr icon-arrow-down8"></span>
+						</div>
 						<ul>
-							<li></li>
-							<li></li>
-							<li></li>
-							<li></li>
-							<li></li>
+							<li><a href="#"></a></li>
+							<li><a href="#">订单查询</a></li>
+							<li><a href="#">积分查询</a></li>
+							<li><a href="#">抵用券查询</a></li>
+							<li><a href="#">我的收藏</a></li>
+							<li><a href="#">修改信息</a></li>
 						</ul>
 					</div>
 					<div>
-						<span>图</span>
+						<span class="hiconfont"></span>
 						<a href="#">顾客中心</a>				
 					</div>
 					<div>
-						<span>图</span>
+						<span class="hiconfont"></span>
 						<a href="#">移动版</a>					
 					</div>
 					<div>
-						<span>图</span>
+						<span class="hiconfont"></span>
 						<a href="#">TV版</a>						
 					</div>
-					<div>
-						<span>图</span>
-						<a href="#">微信</a>	
+					<div class="weixin">
 						<div>
-											
+							<span><img src="http://www.ocj.com.cn/common/webpc/image/common/topimg5.png" alt=""></span>
+							<a href="#">微信</a>	
+						</div>
+						<span class="bg_box"></span>
+						<div class="weixin_erweima">
+							<p>扫一扫二维码,关注我们</p>
+							<img src="https://cdnimg.ocj.com.cn/image_site/shop/conts/8021/6741/9905/11128/1_20170904091940_98.jpg" alt="微信二维码">			
 						</div>				
 					</div>
 				</div>
@@ -92,7 +99,7 @@
 					</div>
 				</div>
 				<div class='left'>
-					<a href="#"><img src="../img/1_20180531172831_68.jpg" alt=""></a>	
+					<a href="#"><img src="https://cdnimg.ocj.com.cn/image_site/shop/conts/8021/6741/9941/11267/1_20180518104258_51.jpg" alt=""></a>	
 				</div>
 			</div>
 		</div>
@@ -100,21 +107,23 @@
 <!-- 登录 -->
 	<div class="login clear">
 		<div class="wrapper clear">
-			<div class="banner left">
-				<a href="#"><img src="../img/2_20180514144510_55.jpg" alt=""></a>
-				<ul>
+			<div class="login_banner left">
+				<div><img src="https://www.ocj.com.cn/image_site/shop/conts/421/761/1241/1441/1_20180612132248_74.jpg" alt=""></div>
+				<div><img src="https://www.ocj.com.cn/image_site/shop/conts/421/761/1241/1441/1_20180612110120_38.jpg" alt=""></div>
+				<div><img src="https://www.ocj.com.cn/image_site/shop/conts/421/761/1241/1441/1_20180612110042_33.jpg" alt=""></div>
+				<div><img src="https://www.ocj.com.cn/image_site/shop/conts/421/761/1241/1441/1_20180105192935_3.jpg" alt=""></div>
+				<ol class="circle_btn">
 					<li class="active"></li>
 					<li></li>
 					<li></li>
 					<li></li>
-					<li></li>
-				</ul>
+				</ol>
 			</div>
 			<div class="login_box left" >
 				<div class="form">
 					<div class="username">
-						<h4>登录名</h4>
-						<input type="text" name="username" id="username" placeholder="请输入手机号码" class="same_style">
+						<h4 class="dengluming">登录名</h4><span id="error"></span>
+						<input type="text" name="username" id="username" placeholder="请输入手机号码" class="same_style" autocomplete="off">
 					</div>
 				
 					<div class="pass">
@@ -122,12 +131,16 @@
 							密码
 							<a href="#" class="right">忘记密码?</a>
 						</h4>
-						<input type="text" name="username" id="username" class="same_style">
+						<input type="password" name="password" id="password" class="same_style" autocomplete="off">
 					</div>
 					<div class="yzm clear">
-							<h4>验证码<span></span></h4>
-							<input type="text" name="yzm" id='yzm'  class="same_style left">
-							<div class="left"><strong class="randnum"></strong><a href="#" class="aclick right">看不清换一张</a></div>
+						<h4>验证码</h4>
+						<div style="height:40px;">
+							<input type="text" name="yzm" id='yzm'  class="same_style left" autocomplete="off">
+							<div class="xianshi left"><strong class="randnum"></strong><a href="javascript:;" class="aclick right">看不清换一张</a></div>
+						</div>
+						<p class="xianshi_info"></p>
+
 					</div>
 					<div class="login_btn">
 						<img src="../img/newlogin.submit.jpg" alt="">
@@ -244,5 +257,9 @@
 			</div>
 		</div>
 	</div>
+	<script type="text/javascript" src="../script/lib/jquery.min.js"></script>
+	<script type="text/javascript" src="../script/js/loginbanner.js"></script>
+	<script type="text/javascript" src="../script/js/denglu.js"></script>
+	<script type="text/javascript" src="../script/js/login.js"></script>
 </body>
 </html>
